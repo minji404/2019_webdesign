@@ -1,14 +1,21 @@
 @charset "utf-8";
 #main_header{position: relative;}
 #main_header>h1{text-align:center;padding:20px 0;}
-#main_header>.main_util{border-bottom:1px solid gray; }
-#main_header>.main_util>.util_menu{width: 980px;height: 30px;background-color:white;margin: 0 auto;position: relative;}
-#main_header>.main_util>.util_menu>ul.util_wrap{height: 20px;background-color:white;position: absolute;right: 0;bottom: 5px;}
-#main_header>.main_util>.util_menu>ul.util_wrap>li{float:left;text-align:center;border-right:1px solid gray; }
+#main_header>.main_util{border-bottom:1px solid #cdcdcd; }
+#main_header>.main_util>.util_menu{width: 980px;height: 30px;margin: 0 auto;position: relative;}
+#main_header>.main_util>.util_menu>ul.util_wrap{height: 20px;position: absolute;right: 0;bottom: 5px;}
+#main_header>.main_util>.util_menu>ul.util_wrap>li{float:left;text-align:center;border-right:1px solid #cdcdcd; }
 #main_header>.main_util>.util_menu>ul.util_wrap>li:last-child{border-right: none;}
-#main_header>.main_util>.util_menu>ul.util_wrap>li>a{display:block;padding:0 10px;color:gray;}
+#main_header>.main_util>.util_menu>ul.util_wrap>li>a{display:block;padding:0 10px;color:gray;font-size:0.8em;}
 .button{position: absolute;right: 0;top:50px;}
 #main_header>.main_menu{height: 45px;background-color:#1D5DA4;}
 #main_header>.main_menu>ul.menu_wrap{width: 980px;height: 45px;background-color:#1D5DA4;margin: 0 auto;}
-#main_header>.main_menu>ul.menu_wrap>li{float:left;width: 163.33px;line-height:45px;text-align:center;}
+#main_header>.main_menu>ul.menu_wrap>li{float:left;width: 163.33px;line-height:45px;text-align:center;border-right:1px solid #b3b3b3;}
+#main_header>.main_menu>ul.menu_wrap>li:first-child{border-left:1px solid#b3b3b3;}
 #main_header>.main_menu>ul.menu_wrap>li>a{display:block;font-weight:bold;color:white; }
+#main_header>.main_menu>ul.menu_wrap>li>a:hover{background-color: skyblue;color:#1d5da4;}
+/*visual*/
+div#visual_wrap{height: 400px;background:#203969 url(../images/images/visual_bg.jpg) no-repeat center;}
+	.visual{width: 980px;margin: 0 auto;height: 400px;position: relative;}
+	.visual>img.img01{position: absolute;right: 0;bottom: 0;}
+	.visual>img.img02{position: absolute;left: 0;top: 70px;}
