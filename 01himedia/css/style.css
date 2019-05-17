@@ -43,13 +43,27 @@ div#visual_icon .card>.card-body{text-align: center;color:white;padding-top:13px
 #content>.card-wrap>ul>li>.card>img{}
 #content>.card-wrap>ul>li>.card>.card-body{padding:15px}
 /*section*/
-#content2{}
+#content2{position: relative;}
 #content2>.card2-wrap{width: 980px;margin: 0 auto;}
 #content2>.card2-wrap>ul{}
-#content2>.card2-wrap>ul>li{float: left;width: 310px;border:1px solid #eee;margin-right:25px;overflow:hidden;}
+#content2>.card2-wrap>ul>li{float: left;width: 310px;border:1px solid #eee;margin-right:25px;overflow:hidden;margin-bottom:50px ;padding: 0 0 20px 0;}
 #content2>.card2-wrap>ul>li:last-child{margin-right:0; }
 #content2>.card2-wrap>ul>li>.card{position: relative;width: 310px;height: 165px;}
 #content2>.card2-wrap>ul>li>.card>img{position: absolute;right:-20px;top:20px }
-#content2>.card2-wrap>ul>li>.card>.card-body{width: 150px;padding:20px 10px }
+#content2>.card2-wrap>ul>li>.card>.card-body{width: 150px;padding:20px 10px; position: absolute;}
 #content2>.card2-wrap>ul>li>.card>.card-text{}
-#content2>.card2-wrap>ul>li>.card>.card-body>a{color:blue;position: absolute;bottom: 15px;}
+#content2>.card2-wrap>ul>li>.card>.card-body>a{color:blue;position: absolute;bottom: -10px; }
+/*footer*/
+#footer{height: 200px;background-color:#5e5e5e;}
+#footer>.footer1{height: 50px;background-color:#4d4d4d;position: relative;}
+#footer>.footer1>.footer01{margin: 0 auto;width: 980px;}
+#footer>.footer1>.footer01>ul{width: 490px;}
+#footer>.footer1>.footer01>ul>li{float: left;line-height:50px; padding:0 40px 0 0;color: white;
+}
+#footer>.footer1>.top{width: 60px;height: 50px;background-color: #404040; position: absolute;top:0;right: 0;}
+#footer>.footer2{width: 980px;margin: 0 auto;}
+#footer>.footer2>.logobt{width: 150px;height: 100px;float: left;line-height:120px;color:white;}
+address{font-style:normal;color:#a5a5a5;padding: 15px 0;line-height:25px;}
+address>p{}
+#footer>.logobt{}
+
