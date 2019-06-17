@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>:: 한국 대학교 ::</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -11,8 +12,36 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
+			// var myslider =$('.slider').bxSlider({
+			// 	auto:true,controls:false,pagerCustom:'.bx-pager'
+			// });
+			// $('.next_btn').click(function(){
+			// 	myslider.goToPrevSlide();
+			// 	return false;
+			// 	});
+			// $('.prev_btn').click(function(){
+			// 	myslider.goToNextSlide();
+			// 	return false; 
+			// });
+			var myslider2 =$('.slider01').bxSlider({
+				controls:false,auto:true,autoDelay:500
+			});
+			var myslider3 =$('.slider02').bxSlider({
+				mode:'vertical',
+				controls:false,touchEnabled:false,pager:false,auto:true,autoDelay:10
+			});
+			$('.sub1_btn').click(function(){
+				myslider3.goToPrevSlide();
+				return false;
+				});
+			$('.sub2_btn').click(function(){
+				myslider3.goToNextSlide();
+				return false; 
+			});
+		});
+		$(document).ready(function(){
 			var myslider =$('.slider').bxSlider({
-				auto:true,controls:false,pagerCustom:'.bx-pager'
+				auto:true,controls:false,pager:false
 			});
 			$('.next_btn').click(function(){
 				myslider.goToPrevSlide();
@@ -22,16 +51,6 @@
 				myslider.goToNextSlide();
 				return false; 
 			});
-
-			$('.slider01').bxSlider({
-				controls:false
-			});
-			$('.slider02').bxSlider({
-				mode:'vertical',
-				controls:false,touchEnabled:false,pager:false
-			});
-
-
 		});
 	</script>
 </head>
@@ -68,7 +87,7 @@
 				<li><a href="#">학사안내</a></li>
 				<li><a href="#">대학생활</a></li>
 				<li><a href="#">학생지원센터</a></li>
-				<li><img src="images/utm_btn.png" alt="버튼"><a href="#"></a></li>
+				<li><a href="#"><img src="images/utm_btn.png" alt="버튼"></a></li>
 			</ul>
 			</div>
 		</nav>
@@ -95,25 +114,28 @@
 				<li>
 					<div class="slider_wrapper">
 						<ul class="slider">
-							<li><img src="./images/ph01.png" alt=""></li>
-							<li><img src="./images/ph012.png" alt=""></li>
-							<li><img src="./images/ph0123.png" alt=""></li>
+							<li><img src="./images/ph01.png" alt="">
+								<a href="#"><img src="./images/s1_btn.png" alt="" class="sbtn1"></a>
+							</li>
+							<li><img src="./images/ph012.png" alt="">
+								<a href="#"><img src="./images/s1_btn.png" alt="" class="sbtn1"></a>
+							</li>
+							<li><img src="./images/ph0123.png" alt="">
+								<a href="#"><img src="./images/s1_btn.png" alt="" class="sbtn2"></a>
+							</li>
 						</ul>
 			<div class="prev_btn"><a href="#"><img src="images/sp_btn.png" alt="prev"></a></div>
 			<div class="next_btn"><a href="#"><img src="images/sn_btn.png" alt="next"></a></div>
-			<div class="bb-pager clearfix">
-				<!-- a[#]*4>{menu} -->
-				<a href="#" data-slide-index="0"></a>
-				<a href="#"data-slide-index="1"></a>
-				<a href="#"data-slide-index="2"></a>
-			</div>
+			
 				</div>
 				</li>
 				<!-- content2 -->
 				<li>
 				<div class="img_wrapper">
 					<ul>
-						<li><img src="./images/ph022.png" alt="" class="img01"></li>
+							<div class="img_w">
+								<li><img src="./images/ph022.png" alt="" class="img01"></li>
+							</div>
 						<li><img src="./images/ph02_txt.png" alt="" class="img02"></li>
 						<li><a href="#"><img src="./images/m_btn.png" alt="" class="img03"></a></li>
 					</ul>
@@ -135,39 +157,73 @@
 				<!-- content4 -->
 				<li>
 					<div class="text">
+						<h2>공지사항</h2>
 						<div class="tx_wr clearfix">
-							<h2>공지사항</h2>
 							<div class="line"></div>
+							<ul class="notice">
+								<li><a href="#"><p>[공지] 한국대학교 웹진..</p><span>2019-06-12</span></a></li>
+								<li><a href="#"><p>[보도] 우수대학교 선정수상</p><span>2019-06-12</span></a></li>
+								<li><a href="#"><p>[공지] 대학입시 설명회</p><span>2019-06-12</span></a></li>
+								<li><a href="#"><p>[공지] 2016년 1학기 성적...</p><span>2019-06-12</span></a></li>
+							</ul>
 						</div>
 					</div>
 				</li>
 				<!-- content5 -->
-				<li></li>
+				<li>
+					<div class="sns_news">
+						<h2>SNS NEWS</h2>
+						<ul class="news_wrap">
+
+							<li><a href="#"><img src="./images/ph004.png" alt="" class="pht"></a></li>
+							<li><p>한국 대학교는 <br>2019학년도 신입생<br>입학식을 3월 2일(목)<br>본교 종합체육관 ...</p></li>
+						</ul>
+							<ul class="sns_wrap">
+								<li><a href="#"><img src="./images/sns01.png" alt=""></a></li>
+								<li><a href="#"><img src="./images/sns02.png" alt=""></a></li>
+								<li><a href="#"><img src="./images/sns03.png" alt=""></a></li>
+								<li><a href="#"><img src="./images/sns04.png" alt=""></a></li>
+							</ul>
+						
+					</div>
+				</li>
 				<!-- content6 -->
 				<li>
 					<div class="cam">
+						<div class="cam_w">
 					<img src="./images/ph005.png" alt="">
 					<div class="overlay">
-						<div class="title">
-							<h3>캠퍼스투어</h3>
+						<div class="camp">
+							<h3>캠퍼스 투어</h3>
+							<p>한국대학교 캠퍼스 소개</p>
 						</div>
 					</div>
 				</div>
+			</div>
 				</li>
 				<!-- content7 -->
 				<li>
-					<div class="video"><img src="./images/ph06.png" alt="">
-					<div class="play"><a href="#"><img src="./images/play_btn.png" alt=""></a></div>
-				</div>
+					<ul>
+						<li class="vi">
+					<img src="./images/play_btn.png" alt="" class="play01">
+					<img src="./images/ph06.png" alt="" class="v02">
+					<div class="back"></div>
+					</li>
+				</ul>
 				</li>
 				<!-- content8 -->
 				<li>
 					<div class="slider_wrapper clearfix">
 						<ul class="slider01">
-							<li><a href="#"><img src="./images/ph07.png" alt=""></a></li>
-							<li><a href=""><img src="./images/ph07.png" alt=""></a></li>
-							<li><a href=""><img src="./images/ph07.png" alt=""></a></li>
-							<li><a href=""><img src="./images/ph07.png" alt=""></a></li>
+							<li><a href="#"><img src="./images/ph07.png" alt=""></a>
+							<a href="#"><img src="./images/b_btn.png" alt="" class="sbtn"></a>
+							</li>
+							<li><a href="#"><img src="./images/ph07.png" alt=""></a>
+							<a href="#"><img src="./images/b_btn.png" alt="" class="sbtn"></a></li>
+							<li><a href="#"><img src="./images/ph07.png" alt=""></a>
+							<a href="#"><img src="./images/b_btn.png" alt="" class="sbtn"></a></li>
+							<li><a href="#"><img src="./images/ph07.png" alt=""></a>
+							<a href="#"><img src="./images/b_btn.png" alt="" class="sbtn"></a></li>
 						</ul>
 				</div>
 			</li>
@@ -176,13 +232,17 @@
 			<div class="sub_slide clearfix">
 			<div class="subb">
 				<h3>학사일정</h3>
-				<span>2016 07</span>
+				<a href="#"><img src="./images/sub01_btn.png" alt=""></a>
+				<span>2019 06</span>
+				<a href="#"><img src="./images/sub02_btn.png" alt=""></a>
 			</div>
 			<div class="subb_slide">
-			<ul class="slider02">
-				<li><h4>2016-1학기 성적 열람 및 상담신청</h4> <p>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p></li>
-				<li><h4>2016-1학기 성적 열람 및 상담신청</h4> <p>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p></li>
+			<ul class="slider02 clearfix">
+				<li><h4>2019-1학기 성적 열람 및 상담신청</h4> <p>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p></li>
+				<li><h4>2019-2학기 성적 열람 및 상담신청</h4> <p>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p></li>
 			</ul>
+			<div class="sub1_btn"><a href="#"><img src="./images/ssu_btn.png" alt=""></a></div>
+			<div class="sub2_btn"><a href="#"><img src="./images/ssd_btn.png" alt=""></a></div>
 		</div>
 		</div>
 
