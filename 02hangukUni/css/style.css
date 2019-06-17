@@ -39,9 +39,13 @@ nav.menu a{display: block;padding: 0 25px;line-height: 120px;font-size:18px;colo
 .section_wrap>ul>li{width: 25%;height: 225px;float: left;}
 .section_wrap>ul>li>img{width: 900px;height: 450px;}
 .section_wrap>ul>li:nth-child(1){width: 75%;height: 450px;}
+.section_wrap>ul>li:nth-child(1) .bx-wrapper .bx-pager{bottom:30px;}
+.section_wrap>ul>li:nth-child(1) .bx-wrapper .bx-pager.bx-default-pager a.active{background:#0045ac;}
+.section_wrap>ul>li:nth-child(1) .bx-wrapper .bx-pager.bx-default-pager a {width: 15px;height: 15px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 10px;}
+
 .section_wrap>ul>li:nth-child(2){/*background-image: url(../images/ph02.png);*/width: 25%;height: 450px;}
 .section_wrap>ul>li:nth-child(3){background-color: #00163b;/*background-image: url(../images/ph03.png);*/}
-.section_wrap>ul>li:nth-child(4){background-color: #1651b7;}
+.section_wrap>ul>li:nth-child(4){background-image:url(../images/bgnt.png);}
 .section_wrap>ul>li:nth-child(5){background-image: url(../images/ph04.png);}
 .section_wrap>ul>li:nth-child(6){/*background-image: url(../images/ph005.png);*/}
 .section_wrap>ul>li:nth-child(7){}
@@ -110,7 +114,7 @@ ul.notice span{text-align: left;}
 
 
 /*content7*/
-.vi{width: 300px;height: 225px;background-color:pink;position: relative;overflow: hidden;}
+.vi{width: 300px;height: 225px;position: relative;overflow: hidden;}
 .vi>.play01{position: absolute;z-index:1; cursor:pointer;left: 120px;top: 80px;}
 .vi>.v02{position: absolute;top: 0px;transition:0.4s;
 		transform:scale(1);}
@@ -127,7 +131,7 @@ ul.notice span{text-align: left;}
 .sbtn:hover{background-color:black;}
 /*content8 end*/
 
-
+.section_wrap>ul>li:nth-child(8){width: 75%;}
 .bx-wrapper {
     -moz-box-shadow:none;
     -webkit-box-shadow:none;
@@ -135,11 +139,12 @@ ul.notice span{text-align: left;}
      border:0 none; 
      background: #fff; 
 }
-.bx-wrapper .bx-pager.bx-default-pager a {background: #666; text-indent: -9999px; display: block;width: 15px;height: 15px;
+
+.con8 .bx-wrapper .bx-pager.bx-default-pager a {background: #666; text-indent: -9999px; display: block;width: 15px;height: 15px;
     margin: -230px 15px -0px -1px;outline: 0; -moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 10px;}
-.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+.con8 .bx-wrapper .bx-pager.bx-default-pager a:hover, .con8 .bx-wrapper .bx-pager.bx-default-pager a.active, .con8 .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: #f74237;}
-    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position: absolute;bottom: -30px;width: 180%;}
+    .con8 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position: absolute;bottom: -30px;width: 180%;}
 
 /*content sub*/
 .sub_slide{width: 1200px;height: 60px;margin-bottom: 10px;position: relative;}
