@@ -6,8 +6,91 @@
 	<title>:: 하이미디어 여행사 ::</title>
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<li>링크테스트</li>
+	<!-- header start -->
+	<header id="header_wrapper">
+		<div class="header_wrap">
+				<div class="headertop">
+				<h1>하이미디어 여행사</h1>
+					<fieldset>
+						<p class="field">
+						<label for="search" class="blind">SEARCH</label>
+						<input type="text" id="search" placeholder="검색어를 입력하세요." class="inp-field">
+						<a href="#"><img src="./images/h_sch.png" alt=""></a>
+						</p>
+					</fieldset>
+				<a href="#"><h2><span>+82</span> 02 1234 5678</h2></a>
+				<ul class="sns_wrap clearfix">
+					<li><a href="#"><img src="./images/sns01.png" alt=""></a></li>
+					<li><a href="#"><img src="./images/sns02.png" alt=""></a></li>
+					<li><a href="#"><img src="./images/sns03.png" alt=""></a></li>
+					<li><a href="#"><img src="./images/sns04.png" alt=""></a></li>
+				</ul>
+				</div>
+		</div>
+		<div class="menu_wrap">
+			<nav class="main_menu">
+				<ul class="clearfix">
+					<li><a href="#">여행도시</a></li>
+					<li><a href="#">호텔예약</a></li>
+					<li><a href="#">렌트카</a></li>
+					<li><a href="#">여행TIP</a></li>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">커뮤니티</a></li>
+				</ul>
+			</nav> 
+		</div>
+	</header>
+	<!-- header end -->
+
+	<!-- content start -->
+	<!-- form start -->
+	<form action="update.php" class="f_layer">
+		<ul>
+			<li>
+				<label for="golo">가고싶은 나라를 선택하세요</label>
+				<select name="nara" id="golo">
+					<option value="">선택하세요</option>
+					<option value="미국">미국</option>
+					<option value="일본">일본</option>
+					<option value="중국">중국</option>
+				</select>
+			</li>
+			<li class="f_cell clearfix">
+				<div class="cleft">
+					<label for="sdate">출발일</label>
+					<input type="date" id="sdate">
+				</div>
+				<div class="cright">
+					<label for="edate">도착일</label>
+					<input type="date" id="edate">
+				</div>
+			</li>
+			<li class="f_cell clearfix">
+				<div class="cleft">
+					<label for="cgrade">좌석등급</label>
+					<select  id="cgrade">
+						<option value="일반석">일반석</option>
+						<option value="이코노미">이코노미</option>
+					</select>
+				</div>
+				<div class="cright">
+					<label for="num">인원</label>
+					<input type="number" id="num" placeholder="1">
+				</div>
+			</li>
+		</ul>
+	</form>
+	<!-- form end -->
+	<!-- content end -->
+
+	<!-- footer start -->
+	<footer>
+		
+	</footer>
+	<!-- footer end -->
+	
 </body>
 </html>
