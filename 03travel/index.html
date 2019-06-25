@@ -48,10 +48,12 @@
 
 	<!-- content start -->
 	<div id="content">
+		<div class="content_bg">
+		<div class="bgi">	<img src="./images/bg02.png" alt="" class="bg_i"></div>
 	<!-- content1 start -->
 	<div class="con1_wrapper">
 		<!-- form start -->
-		<div class="form_wrap">
+		<div class="form_wrap clearfix">
 			<ul class="form_menu clearfix">
 				<li class="on"><a href="#"><img src="./images/icon01.png" alt="">공항예약</a></li>
 				<li><a href="#"><img src="./images/icon02.png" alt="">호텔예약</a></li>
@@ -61,46 +63,70 @@
 		<form action="update.php" class="f_layer">
 			<ul>
 				<li>
-					<label for="golo">가고싶은 나라를 선택하세요</label>
-					<select name="nara" id="golo">
+					<label for="golo" class="p1">가고싶은 나라를 선택하세요</label>
+					<select name="nara" id="golo" class="clearfix">
 						<option value="">선택하세요</option>
 						<option value="미국">미국</option>
 						<option value="일본">일본</option>
 						<option value="중국">중국</option>
 					</select>
 				</li>
-				<li class="f_cell clearfix">
-					<div class="cleft">
+				<li class="f_cell1 clearfix">
+					<div class="cleft1 clearfix">
 						<label for="sdate">출발일</label>
 						<input type="date" id="sdate">
 					</div>
-					<div class="cright">
+					<div class="cright1">
 						<label for="edate">도착일</label>
 						<input type="date" id="edate">
 					</div>
 				</li>
-				<li class="f_cell clearfix">
-					<div class="cleft">
+				<li class="f_cell2 clearfix">
+					<div class="cleft2">
 						<label for="cgrade">좌석등급</label>
 						<select  id="cgrade">
 							<option value="일반석">일반석</option>
 							<option value="이코노미">이코노미</option>
 						</select>
 					</div>
-					<div class="cright">
-						<label for="num">인원</label>
+					<div class="cright2">
+						<label for="num">성인</label>
 						<input type="number" id="num" placeholder="1">
 					</div>
+					<div class="cright2">
+						<label for="num">아이</label>
+						<input type="number" id="num" placeholder="2">
+					</div>
 				</li>
-			</ul>
+			</ul><a href="#"><img src="./images/search_btn.png" alt="search" class="s_btn"></a>
 		</form>
+
 		</div>
 	<!-- form end -->
-	<div class="main_txt"><h2>TRAVEL GO</h2></div>
+	<div class="main_txt">TRAVEL <span>GO</span>
+	<div class="sub_txt">지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</div>
+	</div>
 		<ul class="con_slider clearfix">
-			<li></li>
+			<!-- content1 start-->
+			<li>
+				<div class="img_wrapper">
+					<ul>
+						<li class="img_w"><img src="./images/img01.jpg" alt="" class="img01"></li>
+						<!-- <li><img src="./images/ph02_txt.png" alt="" class="img02"></li>
+						<li><a href="#"><img src="./images/m_btn.png" alt="" class="img03"></a></li> -->
+					</ul>
+					<div class="txt_bg"></div>
+				</div>
+			</li>
+			<!-- content1 end -->
+			<!-- content2 -->
 			<li></li>
 		</ul>
+	<div class="bg_slide">
+		어딧어
+		
+		<img src="./images/sld_con.png" alt="" class="sld">
+	</div>
 	</div>
 	<!-- content1 end -->
 	<div class="con2_wrapper">
@@ -115,6 +141,7 @@
 			<li></li>
 		</ul>
 	</div>
+</div>
 </div>
 	<!-- content end -->
 
