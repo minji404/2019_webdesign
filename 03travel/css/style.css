@@ -84,7 +84,9 @@
 .img_wrapper li{}
 .img_w{width: 233px;height: 190px;position: absolute;background-color: #fff;}
 .img_wrapper:hover .img01{transform:scale(1.2);}
+.img_wrapper:hover .img02{transform:scale(1.2);}
 .img_wrapper .img01{position: absolute;transition:0.6s;}
+.img_wrapper .img02{position: absolute;transition:0.6s;}
 .txt_bg{width: 233px;height: 50px;background-color: #152630;position: absolute;bottom: 0;}
 /*content1 end*/
 /*content end*/
