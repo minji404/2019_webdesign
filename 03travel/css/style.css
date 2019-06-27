@@ -22,7 +22,8 @@
 /*header end*/
 /*content start*/
 #content{background:url(../images/bg01.jpg) no-repeat center;background-size:cover;}
-.content_bg{width: 1200px;margin: 0 auto;background-color:yellow;position: relative;}
+.content_bgpt{background:url(../images/bg_pattern.png);}
+.content_bg{width: 1200px;margin: 0 auto;_background-color:yellow;position: relative;}
 /*backgroun animation*/
 .bgi{width: 800px;height: 400px;position: absolute;right: 0;top: 100px;background-color:orange;}
 .bg_i{_animation:boxmove 2s linear infinite alternate-reverse;}
@@ -33,7 +34,7 @@
 		}
 /*backgroun animation end*/
 .con1_wrapper{width: 980px;height: 616px;background-color:pink;margin: 0 auto;margin-bottom: 16px;padding-top: 56px;position: relative;}
-.form_wrap{width: 485px;height: 300px;background-color: #fff;position: relative;float: left;}
+.form_wrap{width: 483px;height: 300px;background-color: #fff;position: relative;float: left;}
 .form_menu{width: 132px;height: 300px;position: absolute;left: 0;}
 .form_menu>li{width: 132px;height: 75px;position: relative;}
 .form_menu>li:nth-child(1){background-image: url(../images/li01_bg.png);}
@@ -59,15 +60,15 @@
 #num{width: 67px;height: 30px;border-radius:5px;border:1px solid gray;padding: 10px;}
 .s_btn{position: absolute;bottom: 0;}
 .s_btn:hover{opacity:0.8;}
-.main_txt{height: 300px;font-size:62px;font-weight:bold;color:#152630;background-color: #fff;}
+.main_txt{height: 300px;font-size:62px;font-weight:bold;color:#152630;_background-color: #fff;margin-bottom: 20px;}
 .sub_txt{font-size:28px;padding: 20px 0;}
 .main_txt>span{border-bottom:5px solid#152630;}
 
 .form_wrap{float: left;}
 .con1_wrapper ul{}
-.con_slider{}
+.con_slider{_margin-top: 20px;}
 .con_slider li{width: 233px;height: 240px;background-color:blue;float: left;}
-.con_slider li:nth-child(1){_background:url(../images/img01.jpg);}
+.con_slider li:nth-child(1){_background:url(../images/img01.jpg);margin-right: 16px;}
 .con_slider li:nth-child(2){}
 
 .bg_slide{_background-color:orange;position: absolute;right: 0;bottom: 0;}
@@ -88,6 +89,9 @@
 .img_wrapper .img01{position: absolute;transition:0.6s;}
 .img_wrapper .img02{position: absolute;transition:0.6s;}
 .txt_bg{width: 233px;height: 50px;background-color: #152630;position: absolute;bottom: 0;}
+.txt_bg a{line-height: 48px;color:white;padding: 21px;font-size:17px;}
+.txt_bg span{color:#6ec566;padding: 14px;}
+.txt_bg img{right: 19px;top: 17px;position: absolute;}
 /*content1 end*/
 /*content end*/
 /*footer start*/
