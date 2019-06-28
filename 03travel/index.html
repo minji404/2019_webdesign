@@ -4,10 +4,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>:: 하이미디어 여행사 ::</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+	<script>
+	$(document).ready(function(){
+			var myslider = $(".slider").bxSlider({
+				auto:false,pager:false,controls:false
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false; //hash tag 방지
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false; //hash tag 방지
+			});
+			var myslider1 = $(".slider1").bxSlider({
+				auto:false,pager:false,controls:false
+			});
+			$('.prevBtn1').click(function(){
+				myslider1.goToPrevSlide();
+				return false; //hash tag 방지
+			});
+			$('.nextBtn1').click(function(){
+				myslider1.goToNextSlide();
+				return false; //hash tag 방지
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- header start -->
@@ -50,7 +78,8 @@
 	<div id="content">
 		<div class="content_bgpt">
 		<div class="content_bg">
-		<div class="bgi">	<img src="./images/bg02.png" alt="" class="bg_i"></div>
+
+		<div class="bgi">	<img src="./images/bg02.png" alt=""></div>
 	<!-- content1 start -->
 	<div class="con1_wrapper">
 		<!-- form start -->
@@ -70,6 +99,7 @@
 						<option value="미국">미국</option>
 						<option value="일본">일본</option>
 						<option value="중국">중국</option>
+						<option value="프랑스">프랑스</option>
 					</select>
 				</li>
 				<li class="f_cell1 clearfix">
@@ -87,7 +117,8 @@
 						<label for="cgrade">좌석등급</label>
 						<select  id="cgrade">
 							<option value="일반석">일반석</option>
-							<option value="이코노미">이코노미</option>
+							<option value="비지니스">비지니스</option>
+							<option value="퍼스트클래스">퍼스트 클래스</option>
 						</select>
 					</div>
 					<div class="cright2">
@@ -114,7 +145,8 @@
 					<ul>
 						<li class="img_w"><img src="./images/img01.jpg" alt="" class="img01"></li>
 					</ul>
-					<div class="txt_bg"><a href="#">프랑스<span>￦1,900,000~</span><img src="./images/list_btn.png" alt=""></a></div>
+					<div class="txt_w01"># 노트르담_대성당</div>
+					<div class="txt_bg"><a href="javascript:void(0)">프랑스<span>￦1,900,000~</span><img src="./images/list_btn.png" alt=""></a></div>
 				</div>
 			</li>
 			<!-- content1 end -->
@@ -124,7 +156,8 @@
 					<ul>
 						<li class="img_w"><img src="./images/img02.jpg" alt="" class="img02"></li>
 					</ul>
-					<div class="txt_bg"><a href="#">일본<span>  ￦890,000~ </span><img src="./images/list_btn.png" alt=""></a></div>
+					<div class="txt_w01"># 일본_전통_결혼식</div>
+					<div class="txt_bg"><a href="javascript:void(0)">일본<span>  ￦890,000~ </span><img src="./images/list_btn.png" alt=""></a></div>
 				</div>
 			</li>
 		</ul>
@@ -135,14 +168,133 @@
 	<!-- content1 end -->
 	<div class="con2_wrapper">
 		<ul class="con2">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<!-- content3-1 -->
+			<li>
+				<div class="img_wr1">
+					<div class="txt_bg1"><a href="javascript:void(0)">HILLTON HOTEL (PARIS)</a>
+					<img src="images/star1.png" alt="" class="star_w">				
+					</div>
+					<div class="slider_wrapper">
+						<ul class="slider">
+							<li><img src="images/img03.jpg" alt=""><</li>
+							<li><img src="images/img03_1.jpg" alt=""></li>
+							<li><img src="images/img03_2.jpg" alt=""></li>
+						</ul>
+							<div class="bw">
+				<div class="prevBtn"><a href="#"><img src="images/prev_btn.png" alt=""></a></div>
+		<!-- <a href="javascript:void(0)">앵커태그 방지 -->
+				<div class="nextBtn"><a href="#"><img src="images/next_btn.png" alt=""></a></div>
+							</div>
+					</div>
+				</div>
+			</li>
+			<!-- content4-2 -->
+			<li>
+				<div class="img_wr2">
+					<div class="txt_bg2"><a href="javascript:void(0)">관광명소(디즈니랜드)</a>
+					<img src="images/star2.png" alt="" class="star_w">				
+					</div>
+					<div class="slider_wrapper">
+						<ul class="slider1">
+							<li><img src="images/img04.jpg" alt=""><</li>
+							<li><img src="images/img04_1.jpg" alt=""></li>
+							<li><img src="images/img04_2.jpg" alt=""></li>
+						</ul>
+						<div class="bw">
+				<div class="prevBtn1"><a href="#"><img src="images/prev_btn.png" alt=""></a></div>
+		<!-- <a href="javascript:void(0)">앵커태그 방지 -->
+				<div class="nextBtn1"><a href="#"><img src="images/next_btn.png" alt=""></a></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<!-- content5-3 -->
+			<li>
+				<div class="img_wrapper">
+					<ul>
+						<li class="img_w3"><img src="./images/img05.jpg" alt="" class="img05"></li>
+					</ul>
+					<div class="txt_w3">TOKYO</div>
+					<div class="txt_bg3"><a href="javascript:void(0)">20&#x2103 구름조금<p>습도60&#37 바람 남남동2㎳</p></a></div>
+				</div>
+			</li>
+			<!-- content6-4 -->
+			<li>
+				<div class="img_wr4">
+					<ul>
+						<li class="img_w4"><img src="./images/img06.jpg" alt="" class="img06"></li>
+					</ul>
+					<div class="txt_w4">"해외여행은 처음이었는데,하이미디어여행 덕분에 무사히 다녀올 수 있었어요."
+						<p>프랑스 파리 자유여행</p></div>
+					<div class="txt_bg4"><a href="javascript:void(0)">facebook 여행후기<p>(임정희님)</p></a></div>
+				</div>
+			</li>
+			<!-- content7-5 -->
+			<li>
+				<div class="img_wrapper">
+					<ul>
+						<li class="img_w7"><img src="./images/img07.jpg" alt="" class="img07"></li>
+					</ul>
+					<div class="txt_w7"><img src="./images/icon05.png" alt="">여행정보
+						<a href="javascript:void(0)"><img src="./images/more_btn.png" alt="" class="more">	</a>
+					</div>
+					<div class="bg7w">
+					<div class="txt_bg7">
+						  다양한 나라의 명소와 맛집 등 상세한 정보를 볼 수 있습니다.
+						</div>
+						</div>
+				</div>
+			</li>
+			<!-- content8-6 -->
+			<li>
+				<div class="img_wrapper2">
+					<ul>
+						<li class="img_w8"><img src="./images/img08.jpg" alt="" class="img08"></li>
+					</ul>
+					<div class="txt_w8"><img src="./images/icon06.png" alt="">맛집정보
+						
+					</div>
+					<a href="javascript:void(0)"><img src="./images/more_btn.png" alt="" class="more2">	</a>
+					<div class="bg8w">
+					<div class="txt_bg8">
+						  다양한 나라의 명소와 맛집 등 상세한 정보를 볼 수 있습니다.
+						</div>
+						</div>
+				</div>
+			</li>
+			<!-- content9-7 -->
+			<li>
+				<div class="img_wrapper3">
+					<ul>
+						<li class="img_w9"><img src="./images/img09.jpg" alt="" class="img09"></li>
+					</ul>
+					<div class="txt_w9"><img src="./images/icon07.png" alt="">숙박정보
+						
+					</div>
+					<a href="javascript:void(0)"><img src="./images/more_btn.png" alt="" class="more2">	</a>
+					<div class="bg9w">
+					<div class="txt_bg9">
+						  다양한 나라의 명소와 맛집 등 상세한 정보를 볼 수 있습니다.
+						</div>
+						</div>
+				</div>
+			</li>
+			<!-- content10-8 -->
+			<li>
+				<div class="img_wrapper4">
+					<ul>
+						<li class="img_w10"><img src="./images/img10.jpg" alt="" class="img10"></li>
+					</ul>
+					<div class="txt_w10"><img src="./images/icon08.png" alt="">여행자후기
+						<a href="javascript:void(0)"><img src="./images/more_btn.png" alt="" class="more">	</a>
+					</div>
+					<div class="bg10w">
+					<div class="txt_bg10">
+						  다양한 나라의 명소와 맛집 등 상세한 정보를 볼 수 있습니다.
+						</div>
+						</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 </div>
