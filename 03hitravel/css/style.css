@@ -42,7 +42,7 @@
 .com_conh{width: 100%;height: 220px;background-image: url(../images/subimg01.jpg);background-size:cover;position: relative;}
 .com_cont{}
 .com_con{width: 980px;height: 930px;margin: 0 auto;}
-.conim_w{height: 930px;box-shadow:0 0 10px 0 grey;border-top:5px solid#0e73a7;border-bottom:5px solid#0e73a7;z-index: 1;position: absolute;top: 35%;}
+.conim_w{height: 930px;box-shadow:0 0 10px 0 grey;border-top:5px solid#0e73a7;border-bottom:5px solid#0e73a7;z-index: 1;position: absolute;top: 320px;}
 .content_bg1{width: 100%;margin: 0 auto;}
 .con_m{position: absolute;bottom: 60px;left: 40%;}
 /*company content end*/
