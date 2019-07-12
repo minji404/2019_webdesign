@@ -11,14 +11,24 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			var myslider =$('.slider').bxSlider({
+				mode:'fade',auto:true,touchEnabled:false,controls:false
+			});
+			$('.btn_p').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+				});
+			$('.btn_n').click(function(){
+				myslider.goToNextSlide();
+				return false; //hash tag 방지
+			});
 		});
 	</script>
 </head>
 <body>
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
-			<h1>LOGO</h1>
+			<h1><a href="index2.html"><img src="images/logo.png" alt="나뚜루"></a></h1>
 			<div class="nav_wrap">
 				<ul>
 					<li></li>
@@ -39,11 +49,17 @@
 			</nav>
 		</div>
 		<div class="slider_wrap">
+			<div class="s_btn">
+				<div class="btn_p"><a href="#"><img src="images/sp1_btn.png" alt="다음버튼"></a></div>
+				<div class="btn_n"><a href="#"><img src="images/sn1_btn.png" alt="이전버튼"></a></div>
+			</div>
 			<ul class="slider">
+				
 				<li class="first">
 					<div class="slider_txt">
 						<h3>Natural Premium Ice Cream</h3>
 						<p>자연의 풍미를 담은 프리미엄 아이스크림 <br>나뚜루입니다.</p>
+						
 					</div>
 				</li>
 				<li class="second">
@@ -52,10 +68,111 @@
 						<p>자연의 풍미를 담은 프리미엄 아이스크림 <br>나뚜루입니다.</p>
 					</div>
 				</li>
+				<li class="second1">
+					<div class="slider_txt">
+						<h3>Natural Premium Ice Cream</h3>
+						<p>자연의 풍미를 담은 프리미엄 아이스크림 <br>나뚜루입니다.</p>
+					</div>
+				</li>
+				<li class="second2">
+					<div class="slider_txt">
+						<h3>Natural Premium Ice Cream</h3>
+						<p>자연의 풍미를 담은 프리미엄 아이스크림 <br>나뚜루입니다.</p>
+					</div>
+				</li>
 			</ul>
 		</div>
-		<div class="content"></div>
-		
+		<div class="content">
+			<ul class="clearfix">
+				<!-- content1st -->
+				<li>
+					<div class="content1st">
+					<img src="images/li01.png" alt="메뉴보기">
+					<p>나뚜루 메뉴보기</p>
+				</div>
+				</li>
+				<!-- content2st -->
+				<li>
+					<div class="content2st">
+						<img src="images/li02_1.png" alt="">
+						<div class="play">
+							<img src="images/li02.png" alt="">
+						</div>
+					</div>
+				</li>
+				<!-- content3st -->
+				<li class="content3st">
+					<h3>뉴스</h3>
+					<p>롯데제과, 도심 속 숲조성 캠페인<br>'나뚜루 포레스트' 실시<br>자연주의 아이스크림 브랜드 나뚜루가<br>자연보호 활동에 나섰다...</p>
+				<div class="tbtn clearfix">
+					<a href="javascript:void(0)"><img src="images/st_nbtn.png" alt=""></a>
+					<a href="javascript:void(0)"><img src="images/st_nbtn1.png" alt=""></a>
+				</div>
+				</li>
+				<!-- content4 -->
+				<li class="content4st">
+					<img src="images/img01.png" alt="">
+				</li>
+				<!-- content5 -->
+				<li class="content5st">
+					<img src="images/li03.png" alt="뉴스레터">
+					<p>기업소개</p>
+				</li>
+				<!-- content6 -->
+				<li class="content6st">
+					<img src="images/li04.png" alt="뉴스레터">
+					<p>투자정보</p></li>
+				<!-- content7 -->
+				<li class="content7st">
+					<img src="images/li05.png" alt="">
+					<div class="card">
+						<h3>FRESH & NATURAL</h3>
+						<p class="txt_7">세상을 달콤하게 물들이는<br>나뚜루만의 비밀레시피</p>
+					</div>
+				</li>
+				<!-- content8 -->
+				<li class="content8st">
+					<img src="images/li07.png" alt="">
+					<div class="card">
+						<h3>PREMIUM ICE CREAM</h3>
+						<p>편의점에서<br>즐기는 나뚜루</p>
+					</div>
+				</li>
+				<!-- content9 -->
+				<li class="content9st clearfix">
+					<img src="images/li06.png" alt="">
+					<div class="card06">
+						<h3>BEST</h3>
+						<p>장기용이 선택한<br>나뚜루의 BEST 메뉴 보러가기</p>
+					</div>
+				</li>
+				<!-- content10 -->
+				<li>
+					<div class="content10st">
+						<img src="images/li10.png" alt="창업안내">
+						<p>창업안내</p>
+					</div>
+				</li>
+				<!-- content11 -->
+				<li>
+					<div class="content11st">
+						<img src="images/li11.png" alt="사회공헌활동">
+						<p>사회공헌활동</p>
+					</div>
+				</li>
+				<!-- content12 -->
+				<li class="content12st">
+					<img src="images/li12.png" alt="">
+						<div class="card12">
+							<h3>SPECIAL</h3>
+							<p>특별한 나뚜루를<br>경험해보세요</p>
+						</div>
+				</li>
+				
+			</ul>
+
+		</div>
+			
 	</header>
 </body>
 </html>
