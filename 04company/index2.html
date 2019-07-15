@@ -6,8 +6,10 @@
 	<title>COMPANY</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
@@ -22,7 +24,20 @@
 				myslider.goToNextSlide();
 				return false; //hash tag 방지
 			});
+			var  slider2Btn = $('.slider2').bxSlider({
+				pager:false,
+				controls:false,
+				auto:true,
+				mode:"fade"
+			});
+			$(".btn .prev").click(function(){
+				slider2Btn.goToPrevSlide();
+			});
+			$(".btn .next").click(function(){
+				slider2Btn.goToNextSlide();
+			});
 		});
+		new WOW().init();
 	</script>
 </head>
 <body>
@@ -86,13 +101,13 @@
 			<ul class="clearfix">
 				<!-- content1st -->
 				<li>
-					<div class="content1st">
+					<div class="content1st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/li01.png" alt="메뉴보기">
 					<p>나뚜루 메뉴보기</p>
 				</div>
 				</li>
 				<!-- content2st -->
-				<li>
+				<li class="wow fadeInUp" data-wow-delay="0.4s">
 					<div class="content2st">
 						<img src="images/li02_1.png" alt="">
 						<div class="play">
@@ -100,30 +115,61 @@
 						</div>
 					</div>
 				</li>
+				
 				<!-- content3st -->
-				<li class="content3st">
-					<h3>뉴스</h3>
+				<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
+				<h2>뉴스</h2>
+				<ul class="slider2">
+					<li class="clearfix">
+						<div class="left">롯데제과, 도심 속 숲조성 캠페인<br>'나뚜루 포레스트' 실시<br>자연주의 아이스크림 브랜드
+							나뚜루가<br>자연보호 활동에 나섰다...</div>
+						<div class="right"><img src="images/img01.png" alt="01"></div>
+					</li>
+
+					<li class="clearfix">
+						<div class="left">롯데제과의 2분기 연결 매출액과 <br>영업이익은 각각 5337억원, <br> 215억원으로 추정한다.  <br>빙과 역시 ‘나뚜루’ 인수 효과가 <br> 반영되면서 견조한 매출 성장세가  <br>지속될 것으로 보인다...</div>
+						<div class="right"><img src="images/img02.png" alt="01"></div>
+					</li>
+					<li class="clearfix">
+						<div class="left">나뚜루 녹차 아이스크림은<br> 웰빙을 추구하는 여성들에게 <br>인기가 높아 스테디셀러로 <br>자리를 굳혔다...</div>
+						<div class="right"><img src="images/img03.png" alt="01"></div>
+					</li>
+
+					<li class="clearfix">
+						<div class="left">‘카니칸쵸 케이크’는 <br>국내 대표 초코과자 ‘칸쵸’의 <br>캐릭터를 활용한 제품으로,<br> 요즘 식품업계에 불고 있는 <br>카테고리 간 ‘크로스오버’ <br>트렌드를 반영했다...</div>
+						<div class="right"><img src="images/img04.png" alt="01"></div>
+					</li>
+				</ul>
+				<div class="btn">
+					<img src="images/st_nbtn.png" alt="이전" class="prev">
+					<img src="images/st_nbtn1.png" alt="다음" class="next">
+				</div>
+				
+			</li>
+
+					<!-- <h3>뉴스</h3>
 					<p>롯데제과, 도심 속 숲조성 캠페인<br>'나뚜루 포레스트' 실시<br>자연주의 아이스크림 브랜드 나뚜루가<br>자연보호 활동에 나섰다...</p>
 				<div class="tbtn clearfix">
 					<a href="javascript:void(0)"><img src="images/st_nbtn.png" alt=""></a>
 					<a href="javascript:void(0)"><img src="images/st_nbtn1.png" alt=""></a>
-				</div>
+				</div> -->
+
 				</li>
 				<!-- content4 -->
-				<li class="content4st">
-					<img src="images/img01.png" alt="">
-				</li>
+				<!-- <li class="content4st"> -->
+				<!-- 	<img src="images/img01.png" alt=""> -->
+				<!-- </li> -->
 				<!-- content5 -->
-				<li class="content5st">
+				<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
 					<img src="images/li03.png" alt="뉴스레터">
 					<p>기업소개</p>
 				</li>
 				<!-- content6 -->
-				<li class="content6st">
+				<li class="content6st wow fadeInUp" data-wow-delay="1.0s">
 					<img src="images/li04.png" alt="뉴스레터">
 					<p>투자정보</p></li>
 				<!-- content7 -->
-				<li class="content7st">
+				<li class="content7st wow fadeInUp" data-wow-delay="1.2s">
 					<img src="images/li05.png" alt="">
 					<div class="card">
 						<h3>FRESH & NATURAL</h3>
@@ -131,7 +177,7 @@
 					</div>
 				</li>
 				<!-- content8 -->
-				<li class="content8st">
+				<li class="content8st wow fadeInUp" data-wow-delay="1.4s">
 					<img src="images/li07.png" alt="">
 					<div class="card">
 						<h3>PREMIUM ICE CREAM</h3>
@@ -139,7 +185,7 @@
 					</div>
 				</li>
 				<!-- content9 -->
-				<li class="content9st clearfix">
+				<li class="content9st clearfix wow fadeInUp" data-wow-delay="1.6s">
 					<img src="images/li06.png" alt="">
 					<div class="card06">
 						<h3>BEST</h3>
@@ -148,20 +194,20 @@
 				</li>
 				<!-- content10 -->
 				<li>
-					<div class="content10st">
+					<div class="content10st wow fadeInUp" data-wow-delay="1.8s">
 						<img src="images/li10.png" alt="창업안내">
 						<p>창업안내</p>
 					</div>
 				</li>
 				<!-- content11 -->
 				<li>
-					<div class="content11st">
+					<div class="content11st wow fadeInUp" data-wow-delay="2.0s">
 						<img src="images/li11.png" alt="사회공헌활동">
 						<p>사회공헌활동</p>
 					</div>
 				</li>
 				<!-- content12 -->
-				<li class="content12st">
+				<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
 					<img src="images/li12.png" alt="">
 						<div class="card12">
 							<h3>SPECIAL</h3>
@@ -174,5 +220,49 @@
 		</div>
 			
 	</header>
+	<div class="container">
+		<div class="section">
+			<h4>비젼</h4>
+			<p>vision 2020</p>
+			<ul class="clearfix">
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_01.png" alt="engineering">
+						<div class="card_body">
+							
+							<p>유지방14%이상의 <br>프리미엄 아이스크림</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_02.png" alt="engineering">
+						<div class="card_body">
+							
+							<p>100% 천연색소로만 만드는 자연에서 온 아이스크림</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_03.png" alt="engineering">
+						<div class="card_body">
+							
+							<p>낮은 공기주입량으로 더욱 진하고 부드러운 아이스크림</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/banner_icon01_04.png" alt="engineering">
+						<div class="card_body">
+							
+							<p>제품의 상태를 유지하기 위해서 완전 동결</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div >
 </body>
 </html>

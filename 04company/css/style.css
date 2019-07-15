@@ -23,17 +23,71 @@ margin-left: -630px;top: 40px;z-index: 1;}
 .slider_wrap p{text-shadow:0 0px 3px #000;}
 
 /*header content*/
-#main_header .content{width: 1260px;height: 1260px;position: absolute;bottom: 0;background-color: #f00;left: 50%;margin-left: -630px;}
+#main_header .content{width: 1260px;height: 1260px;position: absolute;bottom: 0;background-color: #fff;left: 50%;margin-left: -630px;}
 #main_header .content li{float: left;width: 25%;height: 315px;}
 .content1st{width: 315px;height: 315px;background-color:#477302;padding-top:90px;text-align: center;color:white;font-weight:bold;}
 .content1st img{margin-bottom: 30px;}
 .content2st{width: 315px;height: 315px;position: relative;}
 .content2st .play{position: absolute;top: 0;cursor:pointer;}
-.content3st{background-color: #fff;padding: 30px;position: relative;}
+/*.content3st{background-color: #fff;padding: 30px;position: relative;}
 .content3st h3{font-size:24px;padding-bottom: 25px;}
-.content3st p{font-weight:bold;}
-.tbtn{position: absolute;bottom: 20px;right:30px;}
-.tbtn a{display: block;float: left;}
+.content3st p{font-weight:bold;}*/
+/*.tbtn{position: absolute;bottom: 20px;right:30px;}
+.tbtn a{display: block;float: left;}*/
+.content li.content3st{
+	width:50% !important;padding-top:30px;padding-left:30px;
+	position: relative;
+}
+.content li.content3st h2{width: 200px;position: relative;z-index:1;}
+.content li.content3st .slider2 {position: absolute;top:0;left:0;width: 630px;}
+.content li.content3st .slider2 li{width:630px !important}
+.content li.content3st .slider2 div{float: left;width: 315px;height: 315px;}
+.content li.content3st .slider2 div.left{padding-left: 33px;padding-top: 75px;}
+.content li.content3st .slider2 div.left:after{
+	content:"";border-width:20px;border-style:solid;
+	border-color:transparent transparent transparent #fff;
+	position: absolute;left:315px;top:120px;
+}
+
+.content li.content3st .btn{
+	position: absolute;left:200px;bottom:30px;
+	cursor:pointer;
+}
+.content li.content3st .btn img{float: left;width: 38px;
+	border: 1px solid #cdcdcd;display: block;
+}
+
+.content li.content3st .bx-wrapper {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    border: none;
+    background: #fff;
+    position: absolute;
+    top:0;left:0;
+    width:630px;
+}
+/*.content3st{width: 50%;padding-top:30px;padding-left:30px;
+	position: relative;}*/
+/*.content3st h2{width: 200px;}*/
+/*.content li.content3st{
+	width:50% !important;padding-top:30px;padding-left:30px;
+	position: relative;}*/
+/*.content li.content3st h2{width: 200px;}
+.content li.content3st .slider2 {position: absolute;top:0;left:0;width: 630px;}
+.content li.content3st .slider2 li{width:630px !important}*/
+/*.content li.content3st .slider2 div{float: left;width: 315px;height: 315px;}
+.content li.content3st .slider2 div.left{padding-left: 33px;padding-top: 75px;}
+.content li.content3st .slider2 div.left:after{
+	content:"";border-width:20px;border-style:solid;
+	border-color:transparent transparent transparent #fff;
+	position: absolute;left:315px;top:120px;}
+
+.content li.content3st .btn{
+	position: absolute;left:200px;bottom:30px;
+	cursor:pointer;}
+.content li.content3st .btn img{float: left;width: 38px;
+	border: 1px solid #cdcdcd;display: block;}*/
 
 .content5st{width: 315px;height: 315px;background-color:#233b5d;padding-top:90px;text-align: center;color:white;font-weight:bold;}
 .content5st img{margin-bottom: 30px;}
@@ -89,3 +143,19 @@ margin-left: -630px;top: 40px;z-index: 1;}
 }
 .btn_p{width: 34px;height: 67px;position: absolute;top: 0px;left: 0px;}
 .btn_n{width: 34px;height: 67px;position: absolute;top: 0px;right:0px;}
+
+.container{height: 730px;
+		background:url(../images/contentsbg01.png) no-repeat center fixed;
+		background-size:cover;
+	}
+	.container .section{width: 1260px;margin: 0 auto;padding-top: 70px;}
+	.section > h4{text-align: center;color:white;}
+	.section > h4:after{content:"";display: block;width:50px;height: 3px;background-color: #fff;margin: 30px auto;}
+	.section > p{text-align: center;color:white;font-size:2em;margin-bottom: 70px;}
+	.section ul{width: 100%;}
+	.section ul li{float: left;margin-right: 20px;}
+	.section ul li:last-child{margin-right: 0;}
+	.section .card{width: 300px;height: 380px;_background-color:pink;position: relative;transition: 0.3s;}
+	.section .card:hover{transform:translate(-10px,-10px);box-shadow: 8px 8px 10px rgba(0,0,0,0.5);}
+	.section .card img{position: absolute;left: 50%;transform:translateX(-50%);top: 70px;}
+	.section .card_body{width: 300px;height: 160px;position: absolute;bottom: 0;text-align: center;color:#fff;padding: 0 20px;}
