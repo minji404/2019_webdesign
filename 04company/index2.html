@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
@@ -38,6 +40,12 @@
 			});
 		});
 		new WOW().init();
+	</script>
+	<script>
+		$(function(){
+			$(".facebook").colorbox({iframe:true,innerWidth:560,innerHeight:315});
+		});
+		
 	</script>
 </head>
 <body>
@@ -111,7 +119,7 @@
 					<div class="content2st">
 						<img src="images/li02_1.png" alt="">
 						<div class="play">
-							<img src="images/li02.png" alt="">
+							<a href="https://www.youtube.com/embed/LTRDlfru_Qs" class="facebook"><img src="images/li02.png" alt=""></a>
 						</div>
 					</div>
 				</li>
@@ -222,47 +230,56 @@
 	</header>
 	<div class="container">
 		<div class="section">
-			<h4>비젼</h4>
-			<p>vision 2020</p>
+			<h4>제조과정</h4>
+			<p>PRODUCTION NATUUR</p>
 			<ul class="clearfix">
 				<li>
-					<div class="card">
+					<div class="card01">
 						<img src="images/banner_icon01_01.png" alt="engineering">
 						<div class="card_body">
 							
-							<p>유지방14%이상의 <br>프리미엄 아이스크림</p>
+							<p>유지방14%이상의<br>프리미엄 아이스크림</p>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="card">
+					<div class="card01">
 						<img src="images/banner_icon01_02.png" alt="engineering">
 						<div class="card_body">
 							
-							<p>100% 천연색소로만 만드는 자연에서 온 아이스크림</p>
+							<p>100% 천연색소로만 만드는<br> 자연에서 온 아이스크림</p>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="card">
+					<div class="card01">
 						<img src="images/banner_icon01_03.png" alt="engineering">
 						<div class="card_body">
 							
-							<p>낮은 공기주입량으로 더욱 진하고 부드러운 아이스크림</p>
+							<p>낮은 공기주입량으로<br> 더욱 진하고 부드러운 아이스크림</p>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="card">
+					<div class="card01">
 						<img src="images/banner_icon01_04.png" alt="engineering">
 						<div class="card_body">
 							
-							<p>제품의 상태를 유지하기 위해서 완전 동결</p>
+							<p>제품의 상태를 유지하기 위해서<br>완전 동결</p>
 						</div>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div >
+	<div class="content">	
+		<div class="content_wrap">		
+		</div>
+		<div class="banner_wrap">	
+		</div>	
+	</div>
+	<div class="footer">	
+		<div class="footer_wrap">	</div>	
+	</div>
 </body>
 </html>

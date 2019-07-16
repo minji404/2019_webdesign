@@ -97,6 +97,8 @@ margin-left: -630px;top: 40px;z-index: 1;}
 .card{position: absolute;top: 30px;left: 30px;text-shadow:0 0 5px #000}
 .card h3:after{content:"";display: block;width: 50px;height: 3px;background-color: #fff;margin:20px 0;}
 .card p{font-size:2em;}
+.card01{position: absolute;top: 30px;left: 30px;_text-shadow:0 0 5px #000}
+.card01 p{font-size:17px;}
 .txt_7{padding-top: 100px;}
 
 .content8st{height: 630px !important;color:white;position: relative;}
@@ -151,11 +153,17 @@ margin-left: -630px;top: 40px;z-index: 1;}
 	.container .section{width: 1260px;margin: 0 auto;padding-top: 70px;}
 	.section > h4{text-align: center;color:white;}
 	.section > h4:after{content:"";display: block;width:50px;height: 3px;background-color: #fff;margin: 30px auto;}
-	.section > p{text-align: center;color:white;font-size:2em;margin-bottom: 70px;}
+	.section > p{text-align: center;color:white;font-size:2em;margin-bottom: 70px;font-weight:bold;}
 	.section ul{width: 100%;}
 	.section ul li{float: left;margin-right: 20px;}
 	.section ul li:last-child{margin-right: 0;}
-	.section .card{width: 300px;height: 380px;_background-color:pink;position: relative;transition: 0.3s;}
-	.section .card:hover{transform:translate(-10px,-10px);box-shadow: 8px 8px 10px rgba(0,0,0,0.5);}
-	.section .card img{position: absolute;left: 50%;transform:translateX(-50%);top: 70px;}
-	.section .card_body{width: 300px;height: 160px;position: absolute;bottom: 0;text-align: center;color:#fff;padding: 0 20px;}
+	.section .card01{width: 300px;height: 380px;_background-color:pink;position: relative;transition: 0.3s;}
+	.section .card01:hover{transform:translate(-10px,-10px);box-shadow: 8px 8px 10px rgba(0,0,0,0.5);}
+	.section .card01 img{position: absolute;left: 50%;transform:translateX(-50%);top: 70px;}
+	.section .card_body{width: 300px;height: 100px;position: absolute;bottom: 0;text-align: center;color:#fff;padding: 0 20px;}
+
+	.content{width: 1260px;height: 500px;background-color:#fff;}
+	.content_wrap{}
+	.banner_wrap{}
+	.footer{}
+	.footer_wrap{}
