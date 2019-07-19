@@ -26,6 +26,35 @@ margin-left: -630px;top: 40px;z-index: 1;}
 .nav_wrap ul li.active{background-color:#005826;color:white;}
 .nav_wrap ul li:nth-child(1){border-right:none;}
 
+/*sub*/
+#sub_header{height: 460px;background-color:gray;position: relative;margin-bottom: 30px;border-bottom:1px solid#477302;}
+.subheader{background:url(../images/subheader.png) no-repeat center;background-size:cover;height: 460px;}
+.smenu{width: 1260px;height: 70px;background-color: #fff;margin: 0 auto;position: absolute;bottom: 0;background-color: #eaeaea;left: 50%;margin-left: -630px;}
+.smenu>ul{}
+.smenu>ul>li{cursor:pointer;float: left;font-size: 20px;line-height: 70px;width: 315px;text-align: center;color:#1e1e1e;border-right: 1px solid #bdbdbd;font-family: 'Nanum Gothic', sans-serif;font-weight:bold;}
+.smenu>ul>li:hover{background-color:rgba(71,115,2,0.3);}
+.smenu>ul>li:last-child{border-right: none;}
+.smenu ul li.sclick{background-color:green;}
+.txt{position: absolute;margin: 0 auto;text-align: center;left: 50%;margin-left:-200px;top: 35%;color:white;}
+.txt>h2{font-size:48px;font-weight:bold;margin: 20px;}
+.txt>p{font-size:18px}
+#scon{width: 1260px;height: 1990px;background-color:gray;margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;}
+.cont1{height: 30px;width: 1260px;}
+.cont1>ul{}
+.cont1>ul>li{float: left;display: block;margin-right: 15px;}
+.cont2{width: 1260px;height: 545px;background-color: #fff;margin: 0 auto;text-align: center;border-bottom: 3px solid#477302;}
+.cont2>h2{font-size:36px; font-weight:bold;color:#477302;margin-bottom: 80px;}
+.cont2>h2:before{content:"";display: block;width: 50px;height: 3px;background-color:#477302;margin:30px auto}
+.cont2>h3{font-size:36px;font-weight:lighter;margin-bottom: 70px;}
+.cont2>img{margin-bottom: 75px;}
+.cont2>p{color:#2a2a2a;}
+.cont3{height: 470px;width: 1260px;}
+.cont3_w{margin: 0 auto;}
+.cont3_w>ul>li{float: left;}
+.cont3_w>ul>li>img{}
+.cont3_w>ul>li>h3{}
+.cont3_w>ul>li>p{}
+.cont4{}
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
 .slider_wrap li.first{background:url(../images/header1.png) no-repeat center;background-size:cover;}

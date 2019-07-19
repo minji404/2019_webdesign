@@ -4,8 +4,203 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>:: NATUUR ::</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			$(".nav_wrap ul li").click(function(){
+				var liNum = $(this).index();
+				$(".nav_wrap > ul > li").removeClass();
+				$(this).addClass("active");
+			});
+			$(".smenu ul li").click(function(){
+				var liNum = $(this).index();
+				$(".smenu > ul > li").removeClass();
+				$(this).addClass("sclick");
+			});
+		});
+		
+	</script>
+
 </head>
 <body>
+		<header id="sub_header">
+		<div id="header_top" class="clearfix">
+			<h1><a href="index.html"><img src="images/logo.png" alt="나뚜루"></a></h1>
+			<div class="nav_wrap clearfix">
+				<ul>
+					<li class="active">KOR</li>
+					<li>ENG</li>
+				</ul>
+			</div>
+			<nav id="main_menu">
+				<ul class="clearfix">
+					<li><a href="#">나뚜루</a>
+						<ul class="submenu clearfix">
+							<li><a href="#">CEO 인사말</a></li>
+							<li><a href="brand.html">나뚜루 소개</a></li>
+							<li><a href="#">핵심가치</a></li>
+							<li><a href="#">CI</a></li>
+						</ul>
+					</li>
+					<li><a href="#">가맹점 모집</a>
+						<ul class="submenu clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">메뉴소개</a>
+					<ul class="submenu clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">매장찾기</a>
+					<ul class="submenu clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">SNS</a>
+						<ul class="submenu clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					<li><a href="#">인재채용</a>
+					<ul class="submenu clearfix">
+							<li><a href="#">menu1</a></li>
+							<li><a href="#">menu2</a></li>
+							<li><a href="#">menu3</a></li>
+							<li><a href="#">menu4</a></li>
+						</ul>
+					</li>
+					
+				</ul>
+			</nav>
+
+		</div>
+
+		<div class="subheader"></div>
 	
+		</div>
+		<div class="txt">
+			<h2>나뚜루</h2>
+			<p>나뚜루에서 이뤄낸 기술 변화가 맛을 바꿉니다.</p>
+		</div>
+		<div class="smenu">
+			<ul>
+				<li><a href="javascript:void(0)">CEO 인사말</a></li>
+				<li class="sclick"><a href="javascript:void(0)">나뚜루 소개</a></li>
+				<li><a href="javascript:void(0)">핵심가치</a></li>
+				<li><a href="javascript:void(0)">CI</a></li>
+			</ul>
+		</div>
+	</header>
+		<div id="scon">
+			<div class="cont1">
+				<ul class="clearfix">
+					<li><img src="images/sub1.png" alt=""></li>
+					<li><img src="images/sub2.png" alt=""></li>
+					<li>나뚜루</li>
+					<li><img src="images/sub2.png" alt=""></li>
+					<li>나뚜루 소개</li>
+				</ul>
+			</div>
+			<div class="cont2">
+				<h2>나뚜루 소개</h2>
+				<h3>나뚜루 브랜드 스토리를 소개합니다.</h3>
+				<img src="images/subt.png" alt="">
+				<p>나뚜루는 자연을 뜻 하는 "Nature"와 여행을 뜻하는 "Tour"의 합성어로<br>자연에서 느끼는 신선함과 깨끗함, 여행에서 느끼는
+					즐거움과 설레임을 갖고 있으며,<br>순수하고 깨끗한 자연의 이미지를 느낄 수 있는 감성적인 프리미엄 아이스크림 브랜드 입니다.</p>
+			</div>
+			<div class="cont3">
+				<div class="cont3_w">
+					<ul class="clearfix">
+						<li><img src="images/icon02_1.png" alt="">
+							<h3>가족의 건강을 생각하는 아이스크림</h3>
+							<p>100% 천연색소로만 만드는<br>자연에서 온 아이스크림으로써<br>가족의 건강을 생각합니다.</p>
+						</li>
+						<li><img src="images/icon02_2.png" alt="">
+							<h3>PREMIUM ICE CREAM</h3>
+							<p>나뚜루 아이스크림은<br>오래도록 음미 할 수 있는<br>프리미엄 아이스크림 입니다.</p>
+						</li>
+						<li><img src="images/icon_02_03.png" alt="">
+							<h3>FRESH & NATURAL</h3>
+							<p>나뚜루는 세계 각지에서 엄선한<br>천연의 고급원료와 첨단기술을<br>하나로 결합하여 만든 아이스크림입니다.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cont4">
+				
+			</div>
+		</div>
+		<footer id="footer_wrap">
+		<div class="footw">
+			
+				<div class="flogo ">
+					<a href="index.html"><img src="images/logob.png" alt="" class="logof"></a>
+				</div>
+
+				<div class="footer1 ">
+					<div class="footer01">
+					
+					<ul class="clearfix">
+						<li>
+							<h5><a href="#">회사소개</a></h5>
+						</li>
+						<li>
+							<h5><a href="#">개인정보처리방침</a></h5>
+						</li>
+						<li>
+							<h5><a href="#">이용약관</a></h5>
+						</li>
+						<li>
+							<h5><a href="#">고객센터</a></h5>
+						</li>
+						<li>
+							<h5><a href="#">상담문의</a></h5>
+						</li>
+						<li>
+							<h5><a href="#">사이트맵</a></h5>
+						</li>
+					</ul>
+				</div>
+				<div class="footer2">
+					<address>
+						<p><h4>(12345) 서울특별시 강남구강남북로 1234 강남타워 22층 대표이사 : 홍길동</h4></p>
+						<p><h4>사업자등록번호 : 123-45-33456 통신판매업신고번호 : 제2020 - 202020호 개인정보 보호 책임자 : 홍길동(admin@company.com)</h4></p>
+						<p><h4>COPYRIGHT(C) 2020 BY COMPANY ALL RIGHTS RESERVED.</h4></p>
+					</address>
+				</div>				
+			</div>
+			<div class="ffm">
+					<li><a href="javascript:void(0)">FAMILY SITE</a><a href="javascript:void(0)">▼</a>
+						<ul class="submenu1 clearfix">
+							<li><a href="#">롯데그룹</a></li>
+							<li><a href="#">롯데제과</a></li>
+							<li><a href="#">롯데푸드</a></li>
+						</ul>
+					</li>
+				</div>
+		</div>
+	</footer>
 </body>
 </html>
