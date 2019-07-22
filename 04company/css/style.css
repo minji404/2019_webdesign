@@ -38,7 +38,7 @@ margin-left: -630px;top: 40px;z-index: 1;}
 .txt{position: absolute;margin: 0 auto;text-align: center;left: 50%;margin-left:-200px;top: 35%;color:white;}
 .txt>h2{font-size:48px;font-weight:bold;margin: 20px;}
 .txt>p{font-size:18px}
-#scon{width: 1260px;height: 1990px;background-color:gray;margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;}
+#scon{width: 1260px;height: 1990px;background-color:white;margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;}
 .cont1{height: 30px;width: 1260px;}
 .cont1>ul{}
 .cont1>ul>li{float: left;display: block;margin-right: 15px;}
@@ -48,13 +48,31 @@ margin-left: -630px;top: 40px;z-index: 1;}
 .cont2>h3{font-size:36px;font-weight:lighter;margin-bottom: 70px;}
 .cont2>img{margin-bottom: 75px;}
 .cont2>p{color:#2a2a2a;}
-.cont3{height: 470px;width: 1260px;}
-.cont3_w{margin: 0 auto;}
-.cont3_w>ul>li{float: left;}
-.cont3_w>ul>li>img{}
-.cont3_w>ul>li>h3{}
-.cont3_w>ul>li>p{}
-.cont4{}
+.cont3{height: 470px;width: 1260px;border-bottom:1px solid#cacaca;background-color: #fff;}
+.card_body1{width: 420px;height: 470px;float: left;}
+.card_body1>li{text-align: center;margin: 45px;}
+.card_body1>li>h3:before{content:"";display: block;width: 50px;height: 2px;background-color:#2c4e8b;margin:30px auto}
+.card_body1>li>h3{font-size:24px;font-weight:bold;color:#374b88;margin: 30px 0;}
+.card_body1>li>p{font-size:18px;color:#374b88;}
+.cont4{height: 855px;width: 1260px;background-color:white;}
+.cont4>h2{text-align: center;font-size:30px;font-weight:bold;color:#bc2d7f;margin: 60px 0;}
+.cont4>p{text-align: center;font-size:18px;font-weight:bold;color:#454545;margin: 25px 0;}
+.txt_s1,.img_s1{width: 315px;height: 315px;float: left;}
+.txt_s1{padding:0 40px;position: relative;background-color:white;color:#424242;}
+.txt_s1>h3{margin: 25px 0;font-size:24px;font-weight:bold;color:#28508b;}
+.txt_s1>h3:before{content:"";display: block;width: 50px;height: 3px;background-color:#2c4e8b;margin: 40px 0;}
+.txt_s1:after{
+	content:"";border-width:20px;border-style:solid;
+	border-color: transparent transparent #fff transparent ;
+	position: absolute;top:-40px;left:147.5px;}
+
+.txt_s1:nth-child(2):after{content:"";border-width:20px;border-style:solid;
+	border-color:#fff transparent transparent ;
+	position: absolute;top:315px;left:147px;}
+.txt_s1:nth-child(4):after{content:"";border-width:20px;border-style:solid;
+	border-color:#fff transparent transparent ;
+	position: absolute;top:315px;left:147px;}
+
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
 .slider_wrap li.first{background:url(../images/header1.png) no-repeat center;background-size:cover;}
