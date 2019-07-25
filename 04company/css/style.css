@@ -4,10 +4,15 @@
 margin-left: -630px;top: 40px;z-index: 1;}
 #header_top > h1{float: left;}
 #header_top > #main_menu{float:right;_background-color:rgba(0,0,0,0.5);}
+
+body{min-width:1260px;}
 #main_menu{}
 #main_menu ul{}
 #main_menu ul li{float: left;}
 #main_menu ul li a{display: block;line-height: 50px;padding:0 30px;font-weight: bold;color:#fff;text-shadow:0 0 3px #000;}
+#main_menu ul li a:after{content:"";display: block;width:0;height: 3px;
+background-color:darkgreen;transition:0.3s;margin: 0 auto;}
+#main_menu ul li a:hover:after{width: 100%;}
 #main_menu>ul>li>a:hover{color:darkgreen;font-weight: bold;text-shadow:0 0 4px #000;}
 
 .submenu{display: none;width: 80px;height: 600px;position: relative;}
@@ -29,8 +34,13 @@ margin-left: -630px;top: 40px;z-index: 1;}
 /*sub*/
 #sub_header{height: 460px;background-color:gray;position: relative;margin-bottom: 30px;border-bottom:1px solid#477302;}
 .menu_active{background-color:rgba(0,0,0,0.3);}
-.menu_active:after{content:"";display: block;width: 80px;height: 3px;background-color:darkgreen;margin:1px auto}
+/*.menu_active:after{content:"";display: block;width: 80px;height: 3px;background-color:darkgreen;margin:1px auto}*/
 .subheader{background:url(../images/subheader.png) no-repeat center;background-size:cover;height: 460px;}
+.subheader2{background:url(../images/subheader2.png) no-repeat center;background-size:cover;height: 460px;}
+.subheader3{background:url(../images/subheader3.png) no-repeat center;background-size:cover;height: 460px;}
+.subheader4{background:url(../images/subheader4.png) no-repeat center;background-size:cover;height: 460px;}
+.subheader5{background:url(../images/subheader5.png) no-repeat center;background-size:cover;height: 460px;}
+.subheader6{background:url(../images/subheader6.png) no-repeat center;background-size:cover;height: 460px;}
 .smenu{width: 1260px;height: 70px;background-color: #fff;margin: 0 auto;position: absolute;bottom: 0;background-color: #eaeaea;left: 50%;margin-left: -630px;}
 .smenu>ul{}
 .smenu>ul>li{cursor:pointer;float: left;font-size: 20px;line-height: 70px;width: 315px;text-align: center;color:#1e1e1e;border-right: 1px solid #bdbdbd;font-family: 'Nanum Gothic', sans-serif;font-weight:bold;}
