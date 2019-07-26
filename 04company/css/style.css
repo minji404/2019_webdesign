@@ -1,11 +1,12 @@
 @charset "utf-8";
+
 #main_header{height: 1950px;background-color:white;position: relative;margin-bottom: 80px;}
 #header_top{width: 1260px;height: 50px;position: absolute;left: 50%;
-margin-left: -630px;top: 40px;z-index: 1;}
+margin-left: -630px;top: 40px;z-index: 2;}
 #header_top > h1{float: left;}
 #header_top > #main_menu{float:right;_background-color:rgba(0,0,0,0.5);}
 
-body{min-width:1260px;}
+body{min-width:1260px;font-family: 'Nanum Gothic', sans-serif;}
 #main_menu{}
 #main_menu ul{}
 #main_menu ul li{float: left;}
@@ -43,10 +44,16 @@ background-color:darkgreen;transition:0.3s;margin: 0 auto;}
 .subheader6{background:url(../images/subheader6.png) no-repeat center;background-size:cover;height: 460px;}
 .smenu{width: 1260px;height: 70px;background-color: #fff;margin: 0 auto;position: absolute;bottom: 0;background-color: #eaeaea;left: 50%;margin-left: -630px;}
 .smenu>ul{}
-.smenu>ul>li{cursor:pointer;float: left;font-size: 20px;line-height: 70px;width: 315px;text-align: center;color:#1e1e1e;border-right: 1px solid #bdbdbd;font-family: 'Nanum Gothic', sans-serif;font-weight:bold;}
+.smenu>ul>li{cursor:pointer;float: left;font-size: 20px;line-height: 70px;width:25%;text-align: center;color:#1e1e1e;border-right: 1px solid #bdbdbd;font-family: 'Nanum Gothic', sans-serif;font-weight:bold;}
 .smenu>ul>li:hover{background-color:rgba(71,115,2,0.3);}
 .smenu>ul>li:last-child{border-right: none;}
 .smenu ul li.sclick{background-color:green;}
+.smenu1{width: 1260px;height: 70px;background-color: #fff;margin: 0 auto;position: absolute;bottom: 0;background-color: #eaeaea;left: 50%;margin-left: -630px;}
+.smenu1>ul{}
+.smenu1>ul>li{cursor:pointer;float: left;font-size: 20px;line-height: 70px;width:33.333333%;text-align: center;color:#1e1e1e;border-right: 1px solid #bdbdbd;font-family: 'Nanum Gothic', sans-serif;font-weight:bold;}
+.smenu1>ul>li:hover{background-color:rgba(71,115,2,0.3);}
+.smenu1>ul>li:last-child{border-right: none;}
+.smenu1 ul li.sclick{background-color:green;}
 .txt{position: absolute;margin: 0 auto;text-align: center;left: 50%;margin-left:-200px;top: 35%;color:white;}
 .txt>h2{font-size:48px;font-weight:bold;margin: 20px;}
 .txt>p{font-size:18px}
