@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>:: NATUUR ::</title>
 	<link rel="stylesheet" href="css/reset.css">
@@ -38,6 +39,17 @@
 			$(".btn .next").click(function(){
 				slider2Btn.goToNextSlide();
 			});
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					
+				}else{
+					$(this).removeClass("change");
+					
+				}
+			});
 		});
 		new WOW().init();
 	</script>
@@ -61,6 +73,7 @@
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
 			<h1><a href="index.html"><img src="images/logo.png" alt="나뚜루"></a></h1>
+			<h1><a href="index.html"><img src="images/logob.png" alt="나뚜루"></a></h1>
 			<div class="nav_wrap clearfix">
 				<ul>
 					<li class="active">KOR</li>
@@ -69,58 +82,19 @@
 			</div>
 			<nav id="main_menu">
 				<ul class="clearfix">
-					<li><a href="brand.html">나뚜루</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">CEO 인사말</a></li>
-							<li><a href="">나뚜루 소개</a></li>
-							<li><a href="#">핵심가치</a></li>
-							<li><a href="#">CI</a></li>
-						</ul> -->
-					</li>
-					<li><a href="franchising.html">가맹점 모집</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
-					<li><a href="menu.html">메뉴소개</a>
-					<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
-					<li><a href="store.html">매장찾기</a>
-					<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
-					<li><a href="sns.html">SNS</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
-					<li><a href="hire.html">인재채용</a>
-					<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
-					
+					<li><a href="brand.html">나뚜루</a></li>
+					<li><a href="franchising.html">가맹점 모집</a></li>
+					<li><a href="menu.html">메뉴소개</a></li>
+					<li><a href="store.html">매장찾기</a></li>
+					<li><a href="sns.html">SNS</a></li>
+					<li><a href="hire.html">인재채용</a></li>
 				</ul>
 			</nav>
-
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="slider_wrap">
 			<div class="s_btn">
