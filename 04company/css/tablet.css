@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*tablet layout*/
 
-#main_header{height: 1180px;background-color:blue;position: relative;}
+#main_header{height: 865px;background-color:white;position: relative;}
 #header_top{width: 100%;height: 50px;position:relative;}
 #header_top > h1:nth-child(1){display: none;}
 #header_top > h1:nth-child(2){float: left;}
@@ -144,8 +144,9 @@ position: absolute;z-index: 1;top: 50%;transform:translateY(-50%);}
 
 	.txt_s img{position: absolute;bottom: 35px;left: 35px;}
 	.txt_s span{position: absolute;bottom: 35px;left: 60px;}
-
-	.banner_wrap{width: 100%;margin:80px auto;}
+	
+	.banner_wrap{display: none;}
+	/*.banner_wrap{width: 100%;}
 	.banner1{width: 100%;height: 315px;background-color:#ebcdcd;float: left;position: relative;}
 	.banner1>h2{color:white;font-size:2em;padding:55px 0 0 50px;}
 	.banner1>h2:after{content:"";display: block;width:50px;height: 3px;background-color: #fff;margin: 20px 10px;}
@@ -156,17 +157,17 @@ position: absolute;z-index: 1;top: 50%;transform:translateY(-50%);}
 	.banner2{width: 100%;height: 315px;background-color:#e3edb0;float: left;position: relative;}
 	.banner2>h2{color:#524847;font-size:2em;padding:55px 0 0 50px;z-index: 6;}
 	.banner2>h2:after{content:"";display: block;width:50px;height: 3px;background-color: #524847;margin: 20px 10px;}
-	.banner2>p{color:#524847;padding: 0 50px;}
+	.banner2>p{color:#524847;padding: 0 50px;width:35%;}
 	.banner2>li{width: 170px;height: 50px;border: 1px solid #524847;position: absolute;bottom: 50px;left: 50px;}
 	.banner2>li>a{display:block;color:#524847;text-align: center;line-height: 50px;}
-	.banner2>img{display: none;/*position: absolute;right:0;bottom: 0px;*/}
+	.banner2>img{position: absolute;right:0;bottom: 0px;}*/
 	.footer{}
 	.footer_wrap{}
 #footer_wrap{width:100%;height: 200px;border-top: 1px solid #000;}
 .footw{width: 100%;height: 200px;margin: 0 auto;position: relative;}
 .flogo{width: 220px;height: 200px;_position: absolute;left: 0;float: left;}
 .logof{padding: 50px 0;}
-.footer1{width: 845px;height: 40px;padding: 40px 0px;_margin: 0 auto;float: left;}
+.footer1{width: 100%;height: 40px;padding: 40px 0px;_margin: 0 auto;float: left;}
 .footer01{}
 .footer01>ul{}
 .footer01>ul>li{float: left;text-align: center;border-right: 1px solid#444444;margin-right: 8px;}
