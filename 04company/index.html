@@ -14,6 +14,7 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 	<script>
 		$(document).ready(function(){
 			var myslider =$('.slider').bxSlider({
@@ -50,6 +51,16 @@
 					
 				}
 			});
+		});
+		$(window).resize(function(){
+			var wSize = $(window).width();
+			console.log(wSize);
+			if(wSize > 960){
+				$("#header_top").find(".toggleMenu").removeClass("change");
+			}else{
+				$("#header_top").find(".toggleMenu").removeClass("change");
+				$("#main_menu").css({left:"-100%"});
+			}
 		});
 		new WOW().init();
 	</script>
@@ -246,25 +257,28 @@
 							<h3>SPECIAL</h3>
 							<p>특별한 나뚜루를<br>경험해보세요</p>
 						</div>
+
 				</li>
 				
 			</ul>
 
 		</div>
-			
+		
 	</header>
-
-	<div class="mcontainer">
+<div class="mcontainer">
 		<div class="mcon1">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+			<ul class="clearfix">
+				<li>아이스크림<img src="images/ice02.png" alt=""></li>
+				<li>음료<img src="images/beverage061.png" alt=""></li>
+				<li>디저트<img src="images/d2.png" alt=""></li>
+				<li>커피<img src="images/beverage08.png" alt=""></li>
+				<li>아이스크림 케이크<img src="images/cake07.png" alt=""></li>
 			</ul>
 		</div>
-	</div>
+		<div class="mcon2"><h2>선물하기</h2>소중한 사람에게 나뚜루로 마음을 전해보세요!</div>
+		<div class="mcon3"><h2>홈서비스</h2>이제 집에서도 나뚜루를 즐겨보세요!</div>
+	</div>	
+	
 
 	<div class="container">
 		<div class="section">
@@ -398,13 +412,7 @@
 				</div>				
 			</div>
 			<div class="ffm">
-					<!-- <li><a href="javascript:void(0)">FAMILY SITE</a><a href="javascript:void(0)">▼</a>
-						<ul class="submenu1 clearfix">
-							<li><a href="#">롯데그룹</a></li>
-							<li><a href="#">롯데제과</a></li>
-							<li><a href="#">롯데푸드</a></li>
-						</ul>
-					</li> -->
+					
 					<select class="ffm" >
 						<option value="FAMILY SITE">FAMILY SITE</option>
 						<option value="롯데그룹">롯데그룹</option>

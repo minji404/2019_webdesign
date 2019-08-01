@@ -5,13 +5,16 @@
 
 
 @media all and (max-width:630px){
-	#main_header{height:850px;}
+	#main_header{height:645px;}
 	.slider_wrap ul li{height: 300px;}
 	.slider_wrap h3{font-size:2em;}
 	.slider_wrap p{font-size:0.7em;}
 	#main_header .content li{height: 250px;}
+	.mcon1>ul>li{line-height: 20px;}
 }
 @media all and (max-width:520px){
 	#main_header{height:550px;}
-	#main_header .content li{height: 200px;}
+	#main_header .slider2 li{height: 280px;}
+	.mcontainer{height: 490px;}
+	.mcon1>ul>li{line-height: 20px;height: 150px;}
 }
