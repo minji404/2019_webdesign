@@ -45,10 +45,10 @@
 				console.log(myClass);
 				if(myClass == "toggleMenu"){
 					$(this).addClass("change");
-					
+					$("#main_menu").stop().animate({left:0},300);
 				}else{
 					$(this).removeClass("change");
-					
+					$("#main_menu").stop().animate({left:"-100%"},300)
 				}
 			});
 		});
@@ -171,7 +171,7 @@
 					</li>
 
 					<li class="clearfix">
-						<div class="left">롯데제과의 2분기 연결 매출액과 <br>영업이익은 각각 5337억원, <br> 215억원으로 추정한다.  <br>빙과 역시 ‘나뚜루’ 인수 효과가 <br> 반영되면서 견조한 매출 성장세가  <br>지속될 것으로 보인다...</div>
+						<div class="left">롯데제과의 2분기 연결 매출액과 <br>영업이익은 각각 5337억원, <br> 215억원으로 추정한다.  <br>빙과 역시 ‘나뚜루’ 인수 효과가 <br> 반영되면서 견조한 매출 성장세가  <br>지속될 것으로...</div>
 						<div class="right"><img src="images/img02.png" alt="01"></div>
 					</li>
 					<li class="clearfix">
