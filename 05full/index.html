@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>:: sWeet~CHewy~Haribo ::</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+	<script>
+		$(document).ready(function(){
+			$("#fullpage").fullpage({
+				anchors:["1st","2st","3st","4st"],
+				menu:"#topMenu",
+				navigation:true,
+				slidesNavigation:true,
+				navigationPosition:'right',
+				navigationTooltips:["P<span>roducts</span>","H<span>istory</span>","O<span>ur Candy</span>","C<span>ontact</span>"],
+				fitToSection:true,
+
+				afterLoad:function(anchorslink,index){
+					console.log("anchor:"+anchorslink+", index:"+index);
+					if(index == 2){
+						$("#onView").addClass("move");
+					}else{
+						$("#onView").removeClass("move");
+					}
+				}
+			});
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(this).addClass("change");
+					$("#main_menu").stop().animate({left:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#main_menu").stop().animate({left:"-100%"},300)
+				}
+			});
+		});
+	</script>
+	
+</head>
+<body style="overflow: hidden; height: 100%;">
+	<nav id="navTop">
+		<ul id="topMenu">
+			<!-- li*4>a[#$st]>{MENU$} -->
+			<li class="logo"><a href="index.html">HARIBO</a></li>
+			<li data-menuanchor="1st"><a href="#1st">PRODUCTS</a></li>
+			<li data-menuanchor="2st"><a href="#2st">HISTORY</a></li>
+			<li data-menuanchor="3st"><a href="#3st">OUR CANDY</a></li>
+			<li data-menuanchor="4st"><a href="#4st">CONTACT</a></li>
+		</ul>
+		<div id="menu">
+			<div class="toggleMenu">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		</div>
+	</nav>
+	<div id="fullpage">
+		<div class="section page" id="page1" data-anchor="1st">
+			
+			<video id="myVideo" loop="" muted="" data-autoplay="">
+			<source src="images/paint.mp4" type="video/mp4">
+			<source src="images/flowers.webm" type="video/webm">
+		</video>
+			<div class="main">
+				<h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+			</div>
+			<div class="scroll"><a href="#2st">scroll</a></div>
+		</div>
+		<div class="section page" id="page2" data-anchor="2st">
+			<div class="main" id="onView">
+				<h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+			</div>
+		</div>
+		<!-- <div class="section page" id="page3" data-anchor="3st"></div> -->
+		<div class="section page"  id="page3" data-anchor="3st">
+			<div class="main">
+				<h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+			</div>
+		</div>
+		<div class="section page" id="page4" data-anchor="4st">
+			<!-- <div class="slide">
+				<div class="sView1">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, vel?</div>
+			</div>
+			<div class="slide">
+				<div class="sView2">2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, vel?</div>
+			</div> -->
+			<!-- <div class="photo">
+			</div> -->
+			<div class="main">
+				<h3>Lorem ipsum.</h3>
+				<p>Lorem ipsum dolor sit.</p>
+				<a href="#">more</a>
+			</div>
+		</div>
+
+		
+	</div>
+</body>
+</html>
