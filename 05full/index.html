@@ -39,16 +39,14 @@
 				console.log(myClass);
 				if(myClass == "toggleMenu"){
 					$(this).addClass("change");
-					$("#main_menu").stop().animate({left:0},300);
+					$("#main_menu").stop().animate({right:0},300);
 				}else{
 					$(this).removeClass("change");
-					$("#main_menu").stop().animate({left:"-100%"},300)
+					$("#main_menu").stop().animate({right:"-100%"},300)
 				}
 			});
 		});
 	</script>
-	<style>
-	</style>
 	
 </head>
 <body style="overflow: hidden; height: 100%;">
@@ -68,52 +66,76 @@
 			<div class="bar3"></div>
 		</div>
 		</div>
+		
 	</nav>
+	<div id="main_menu">
+			<ul class="clearfix">
+				<li><a href="#">haribo</a></li>
+				<li><a href="#">PRODUCTS</a></li>
+				<li><a href="#">-</a></li>
+				<li><a href="#">ABOUT US</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">OUR CANDY</a></li>
+				<li><a href="#">About our Gummies</a></li>
+				<li><a href="#">Quality requirements</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">FAQs</a></li>
+				<li><a href="#">Contact information</a></li>
+				</ul>
+		</div>
 	<div id="fullpage">
 		<div class="section page" id="page1" data-anchor="1st">
 			
 			
 		<video id="myVideo" loop="" muted="" data-autoplay="">
-			<source src="images/paint.mp4" type="video/mp4">
+			<!-- <source src="images/paint.mp4" type="video/mp4"> -->
+			<source src="images/paint2.mp4" type="video/mp4">
 			<source src="images/paint.webm" type="video/webm">
 		</video>
 		<div class="main">
-				<h3>Lorem ipsum.</h3>
-				<p>Lorem ipsum dolor sit.</p>
+				<h3>HARIBO</h3>
+				<p>Welcome to the happy and colorful world
+of HARIBO!</p>
 				<a href="#">more</a>
 			</div>
-			
+			<div class="scroll"><a href="#2st">scroll</a></div>
 		
 		</div>
 		<div class="section page" id="page2" data-anchor="2st">
 			<div class="main" id="onView">
-				<h3>Lorem ipsum.</h3>
-				<p>Lorem ipsum dolor sit.</p>
-				<a href="#">more</a>
+				<h3>bear evolution</h3>
+				<p>BEAR EVOLUTION</p>
+				<a href="#">Visit Page</a>
 			</div>
 		</div>
 		<!-- <div class="section page" id="page3" data-anchor="3st"></div> -->
 		<div class="section page"  id="page3" data-anchor="3st">
 			<div class="main">
-				<h3>Lorem ipsum.</h3>
-				<p>Lorem ipsum dolor sit.</p>
+				<h3>America's #1 Gummi Bear</h3>
+				<p>Explore HARIBO Goldbears</p>
 				<a href="#">more</a>
 			</div>
 		</div>
 		<div class="section page" id="page4" data-anchor="4st">
-			<!-- <div class="slide">
-				<div class="sView1">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, vel?</div>
+			<div class="slide">
+				<div class="sView1"><a href="#3"><img src="images/p_1.png" alt=""><h2>FAQ</h2></a></div>
 			</div>
 			<div class="slide">
-				<div class="sView2">2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, vel?</div>
-			</div> -->
+				<div class="sView2"><a href="#"><img src="images/p_3.png" alt=""><h2>SNS</h2></a></div>
+			</div>
+			<div class="slide">
+				<div class="sView3"><a href="#"><img src="images/p_2.png" alt=""><h2>CONTACT</h2></a></div>
+			</div>
+			<div class="slide">
+				<div class="sView4"><a href="#"><img src="images/p_4.png" alt=""><h2>TALK</h2></a></div>
+			</div>
 			<!-- <div class="photo">
 			</div> -->
-			<div class="main">
+			<!-- <div class="main">
 				<h3>Lorem ipsum.</h3>
 				<p>Lorem ipsum dolor sit.</p>
 				<a href="#">more</a>
-			</div>
+			</div> -->
 		</div>
 
 		
