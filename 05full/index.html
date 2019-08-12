@@ -25,7 +25,6 @@
 				navigationPosition:'right',
 				navigationTooltips:["P<span>roducts</span>","H<span>istory</span>","O<span>ur Candy</span>","C<span>ontact</span>"],
 				fitToSection:true,
-
 				afterLoad:function(anchorslink,index){
 					console.log("anchor:"+anchorslink+", index:"+index);
 					if(index == 2){
@@ -48,6 +47,8 @@
 			});
 		});
 	</script>
+	<style>
+	</style>
 	
 </head>
 <body style="overflow: hidden; height: 100%;">
@@ -71,17 +72,18 @@
 	<div id="fullpage">
 		<div class="section page" id="page1" data-anchor="1st">
 			
-			<video id="myVideo" loop="" muted="" data-autoplay="">
+			
+		<video id="myVideo" loop="" muted="" data-autoplay="">
 			<source src="images/paint.mp4" type="video/mp4">
-			<source src="https://alvarotrigo.com/fullPage/examples/imgs/flowers.webm" type="video/webm">
-			<!-- <source src="images/flowers.webm" type="video/webm"> -->
+			<source src="images/paint.webm" type="video/webm">
 		</video>
-			<div class="main">
+		<div class="main">
 				<h3>Lorem ipsum.</h3>
 				<p>Lorem ipsum dolor sit.</p>
 				<a href="#">more</a>
 			</div>
-			<div class="scroll"><a href="#2st">scroll</a></div>
+			
+		
 		</div>
 		<div class="section page" id="page2" data-anchor="2st">
 			<div class="main" id="onView">
