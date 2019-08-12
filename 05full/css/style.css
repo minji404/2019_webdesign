@@ -22,7 +22,7 @@
 		.main a:hover{background-color:#fff;color:#000;}
 
 		/*menu*/
-		#navTop{position: fixed;height: 50px;width: 100%;background-color:#000;z-index: 1;padding-left:20px;}
+		#navTop{position: fixed;height: 50px;width: 100%;background-color:#000;z-index: 9;padding-left:20px;}
 		#navTop li{float: left;}
 		#navTop li a{display: block;line-height: 50px;text-align: center;padding: 0 10px;}
 		#navTop li.active{background-color:#eb630a;}
@@ -85,14 +85,21 @@
 .toggleMenu .bar2{top:22px;}
 .toggleMenu .bar3{top:32px;}
 
-.toggleMenu.change .bar1{transform:rotate(-45deg);top:22px;background-color:#fff;}
+.toggleMenu.change .bar1{transform:rotate(-45deg);top:22px;background-color:#fff;position: absolute;}
 .toggleMenu.change .bar2{opacity:0;}
-.toggleMenu.change .bar3{transform:rotate(45deg);top:22px;background-color:#fff;}
+.toggleMenu.change .bar3{transform:rotate(45deg);top:22px;background-color:#fff;position: absolute;}
 
-#main_menu{position: fixed;width: 100%;height: 100%;background-color:rgba(0,120,120,1);z-index: 99;
-						right: -100%;}}
-#main_menu ul{position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);}
-#main_menu ul li{text-align: center;}
-#main_menu li a{display: block;text-align: center;font-size:2em;font-weight:bold;line-height:2em;}
+#header_top{
+	width:100%;height: 50px;
+	position:relative;
+}
+#header_top > h1{float: left;color:black;}
+#header_top > #main_menu{position: fixed;width: 100%;height: 100%;background-color:pink;z-index: 99999;
+						right: -100%;}
+#header_top > #main_menu > ul{position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);}
+#header_top > #main_menu > ul > li{width: 100%;margin: 20px 0;}
+#header_top > #main_menu > ul > li:nth-child(1) img{width: 200px;height: 80px;}
+#header_top > #main_menu > ul > li > a{_display: block;color:white;_text-align: center;font-size:2em;font-weight:bold;line-height:30px;}
+
 
 	</style>}
