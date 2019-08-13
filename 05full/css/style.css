@@ -119,7 +119,7 @@
 		}
 .toggleMenu .bar1{top:12px;}
 .toggleMenu .bar2{top:22px;}
-/*.toggleMenu .bar3{top:32px;}*/
+.toggleMenu .bar3{top:32px;}
 
 .toggleMenu.change .bar1{transform:rotate(-45deg);top:22px;background-color:#fff;position: absolute;}
 .toggleMenu.change .bar2{opacity:0;}
