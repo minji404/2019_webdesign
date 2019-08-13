@@ -15,6 +15,7 @@
 			 var console = { log: function() {} };
 		</script>
 	<![endif]-->
+
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage({
@@ -31,6 +32,12 @@
 						$("#onView").addClass("move");
 					}else{
 						$("#onView").removeClass("move");
+					}if(index == 3){
+						$(".onview").addClass("move");
+						$(".onview1").addClass("move");
+					}else{
+						$(".onview").removeClass("move");
+						$(".onview1").removeClass("move");
 					}
 				}
 			});
@@ -45,12 +52,19 @@
 					$("#main_menu").stop().animate({right:"-100%"},300)
 				}
 			});
+
+			$("#main_menu>ul>li").hover(function(){
+					$(this).find(".sub-m").stop().slideDown();
+				}, function(){
+					$(this).find(".sub-m").stop().slideUp();
+				});
 		});
 	</script>
 	
 </head>
 <body style="overflow: hidden; height: 100%;">
 	<nav id="navTop">
+		<div id="header_top" class="clearfix">
 		<ul id="topMenu">
 			<!-- li*4>a[#$st]>{MENU$} -->
 			<li class="logo"><a href="index.html">HARIBO</a></li>
@@ -61,28 +75,38 @@
 		</ul>
 		<div id="menu">
 			<div class="toggleMenu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
-		</div>
-		
-	</nav>
-	<div id="main_menu">
+		<div id="main_menu">
 			<ul class="clearfix">
-				<li><a href="#">haribo</a></li>
-				<li><a href="#">PRODUCTS</a></li>
-				<li><a href="#">-</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">OUR CANDY</a></li>
-				<li><a href="#">About our Gummies</a></li>
-				<li><a href="#">Quality requirements</a></li>
-				<li><a href="#">CONTACT</a></li>
-				<li><a href="#">FAQs</a></li>
-				<li><a href="#">Contact information</a></li>
+				<li><a href="index.html"><span>HARIBO</span></a></li>
+				<li><a href="#">PRODUCTS</a>
+					<ul class="sub-m"><li><a href="#">All products</a></li></ul>
+				</li>
+				<li><a href="#">ABOUT US</a>
+					<ul class="sub-m"><li><a href="#">History</a></li></ul>
+				</li>
+				<li><a href="#">OUR CANDY</a>
+					<ul class="sub-m">
+						<li><a href="#">About our Gummies</a></li>
+						<li><a href="#">Quality requirements</a></li>
+					</ul>
+				</li>
+				<li><a href="#">CONTACT</a>
+					<ul class="sub-m">
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact information</a></li>
+					</ul>
+				</li>
+				
 				</ul>
 		</div>
+		</div>
+	</nav>
+	
 	<div id="fullpage">
 		<div class="section page" id="page1" data-anchor="1st">
 			
@@ -96,24 +120,30 @@
 				<h3>HARIBO</h3>
 				<p>Welcome to the happy and colorful world
 of HARIBO!</p>
+
 				<a href="#">more</a>
 			</div>
 			<div class="scroll"><a href="#2st">scroll</a></div>
 		
 		</div>
 		<div class="section page" id="page2" data-anchor="2st">
+
 			<div class="main" id="onView">
 				<h3>bear evolution</h3>
 				<p>BEAR EVOLUTION</p>
+
 				<a href="#">Visit Page</a>
 			</div>
 		</div>
 		<!-- <div class="section page" id="page3" data-anchor="3st"></div> -->
 		<div class="section page"  id="page3" data-anchor="3st">
-			<div class="main">
+			<div class="poinc">
+			<div class="main1 onview">
 				<h3>America's #1 Gummi Bear</h3>
 				<p>Explore HARIBO Goldbears</p>
-				<a href="#">more</a>
+				
+			</div>
+			<div class="main1 onview1"><a href="#">more</a></div>
 			</div>
 		</div>
 		<div class="section page" id="page4" data-anchor="4st">
@@ -137,8 +167,8 @@ of HARIBO!</p>
 				<a href="#">more</a>
 			</div> -->
 		</div>
-
 		
 	</div>
+
 </body>
 </html>
