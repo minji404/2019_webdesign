@@ -125,6 +125,7 @@
 .toggleMenu.change .bar2{opacity:0;}
 .toggleMenu.change .bar3{transform:rotate(45deg);top:22px;background-color:#fff;position: absolute;}
 
+
 #header_top{
 	width:100%;height: 50px;
 	position:relative;
@@ -146,6 +147,7 @@
 		background-position: 0% 50%;
 	}
 }
+
 
 	</style>}
 
