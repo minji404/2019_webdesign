@@ -314,7 +314,7 @@ html.fp-enabled,
     left: 20px;
 }*/
 /*끝*/
-#fp-nav{position: fixed;right: 0px;width: 100px;_background-color:skyblue;top:50%;}
+#fp-nav{position: fixed;right: 0px;width: 100px;_background-color:skyblue;top:50%;cursor:pointer;}
 #fp-nav ul{}
 #fp-nav ul li{height: 60px;position: relative;}
 #fp-nav ul li a{display: block;height: 40px;}

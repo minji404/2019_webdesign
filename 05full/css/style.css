@@ -157,26 +157,42 @@
 #navTop1 li.active a{color:white;font-weight:bold;}
 #navTop1 .sub-m{display: none;}
 #navTop1 .sub-m > li{width: 100%;height: 30px;padding: 20px 0;}
-#navTop1 .sub-m>li>a{display: block;color:black;font-weight:normal;}
+#navTop1 .sub-m>li>a{_display: block;color:black;font-weight:normal;}
 .logo a{color:white;display: block;font-size:2em;margin:0 30px;font-weight:bold;}
 /*subPage2-history*/
 
 .scene.two>div{background-color:rgba(255,255,255,0.5);}
 .scene.two>div>h1{margin: 20px;}
 .scene.two>div>h1:after{content:"";
-			width:95%;height: 1px;background-color: #f00;
+			width:95%;height: 3px;background-color: #f00;
 			display: block;margin: 20px;}
-.scene.three>div{background-color:rgba(255,255,255,0.5);}
+.scene.three>div{background-color:rgba(255,255,255,0.5);width: 600px;position: absolute;left: 50%;top: 30%;transform:translate(-50%,-30%);
+			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;}
 .scene.three>div>h1{margin: 20px;}
 .scene.three>div>h1:after{content:"";
-			width:95%;height: 1px;background-color: #f00;
+			width:95%;height: 3px;background-color: #f00;
 			display: block;margin: 20px;}
-.scene.three img{
-			width: 600px;position: absolute;left: 50%;top: 80%;transform:translate(-50%,-20%);
-			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;
+
+#v04s>div{left: 50%;top: 10%;transform:translate(-50%,-90%);}
+#v04s>div>h1:after{display: none;}
+#v04s img{
+			width: 600px;position: absolute;left: 50%;transform:translate(-50%);
+			/*text-align: center;font-size: 1.5em;*/max-width:80%;margin: 60px 0;
 		}
+#v05s>div>h1{margin: 40px;}
+#v05s>div>h2{margin: 10px;}
+#v06s>div{color:black;width: 600px;position: absolute;left: 50%;top:20%;transform:translate(-50%,-50%);
+			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;background-color: #fff;padding: 20px;}
+#v06s>div>h2{margin-bottom: 40px;}
+#v06s>div>h1{margin-bottom: 40px;}
+#v06s{width: 100%;height: 65%;}
+#v07s{width: 100%;height: 120%;}
+#v07s>div{color:#fff;width: 600px;position: absolute;left: 50%;top: 35%;transform:translate(-50%,-50%);
+			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;}
+#v07s>div>h2{margin-bottom: 30px;}
+
 .scene{
-			width: 100%;height: 100%;background-attachment:fixed;
+			width: 100%;height: 130%;background-attachment:fixed;
 			background-position:center;
 			background-size: cover;
 			position: relative;
@@ -191,14 +207,23 @@
 		.scene.four{
 			background-image: url(../images/haribo.jpg);
 		}
+		.scene.five{
+			background-image: url(../images/gol.jpg);
+		}
 		.scene div{
 			color:black;width: 600px;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);
 			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;
 		}
 		.scene.one div h1:after{
 			content:"";
-			width:100%;height: 1px;_background-color: #fff;background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+			width:100%;height: 3px;background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
 			display: block;margin: 10px;
 		}
+
+/*subPage3-our candy*/
+/*subPage3-our candy-Quality requirements-aboutq*/
+
+
+
 	</style>
 
