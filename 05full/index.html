@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/fullpage.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/haribo.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -16,50 +17,6 @@
 		</script>
 	<![endif]-->
 
-	<script>
-		$(document).ready(function(){
-			$("#fullpage").fullpage({
-				anchors:["1st","2st","3st","4st"],
-				menu:"#topMenu",
-				navigation:true,
-				slidesNavigation:true,
-				navigationPosition:'right',
-				navigationTooltips:["P<span>roducts</span>","H<span>istory</span>","O<span>ur Candy</span>","C<span>ontact</span>"],
-				fitToSection:true,
-				afterLoad:function(anchorslink,index){
-					console.log("anchor:"+anchorslink+", index:"+index);
-					if(index == 2){
-						$("#onView").addClass("move");
-					}else{
-						$("#onView").removeClass("move");
-					}if(index == 3){
-						$(".onview").addClass("move");
-						$(".onview1").addClass("move");
-					}else{
-						$(".onview").removeClass("move");
-						$(".onview1").removeClass("move");
-					}
-				}
-			});
-			$(".toggleMenu").click(function(){
-				var myClass = $(this).attr("class");
-				console.log(myClass);
-				if(myClass == "toggleMenu"){
-					$(this).addClass("change");
-					$("#main_menu").stop().animate({right:0},300);
-				}else{
-					$(this).removeClass("change");
-					$("#main_menu").stop().animate({right:"-100%"},300)
-				}
-			});
-
-			$("#main_menu>ul>li").hover(function(){
-					$(this).find(".sub-m").stop().slideDown();
-				}, function(){
-					$(this).find(".sub-m").stop().slideUp();
-				});
-		});
-	</script>
 	
 </head>
 <body style="overflow: hidden; height: 100%;">
@@ -84,22 +41,22 @@
 			<ul class="clearfix">
 
 				<li><a href="index.html"><span>HARIBO</span></a></li>
-				<li><a href="#">PRODUCTS</a>
-					<ul class="sub-m"><li><a href="#">All products</a></li></ul>
+				<li><a href="products.html">PRODUCTS</a>
+					<ul class="sub-m"><li><a href="products.html">All products</a></li></ul>
 				</li>
 				<li><a href="#">ABOUT US</a>
-					<ul class="sub-m"><li><a href="#">History</a></li></ul>
+					<ul class="sub-m"><li><a href="history.html">History</a></li></ul>
 				</li>
-				<li><a href="#">OUR CANDY</a>
+				<li><a href="about.html">OUR CANDY</a>
 					<ul class="sub-m">
-						<li><a href="#">About our Gummies</a></li>
-						<li><a href="#">Quality requirements</a></li>
+						<li><a href="aboutg.html">About our Gummies</a></li>
+						<li><a href="aboutq.html">Quality requirements</a></li>
 					</ul>
 				</li>
-				<li><a href="#">CONTACT</a>
+				<li><a href="contact.html">CONTACT</a>
 					<ul class="sub-m">
-						<li><a href="#">FAQs</a></li>
-						<li><a href="#">Contact information</a></li>
+						<li><a href="confaq.html">FAQs</a></li>
+						<li><a href="coninfo.html">Contact information</a></li>
 					</ul>
 				</li>
 				
@@ -122,7 +79,7 @@
 				<p>Welcome to the happy and colorful world
 of HARIBO!</p>
 
-				<a href="#">more</a>
+				<a href="products.html">more</a>
 			</div>
 			<div class="scroll"><a href="#2st">scroll</a></div>
 		
@@ -133,7 +90,7 @@ of HARIBO!</p>
 				<h3>bear evolution</h3>
 				<p>BEAR EVOLUTION</p>
 
-				<a href="#">Visit Page</a>
+				<a href="history.html">Visit Page</a>
 			</div>
 		</div>
 		<!-- <div class="section page" id="page3" data-anchor="3st"></div> -->

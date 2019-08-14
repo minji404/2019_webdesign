@@ -64,9 +64,9 @@
 		#header_top > #main_menu > ul > li > a{_display: block;color:white;_text-align: center;font-size:2em;font-weight:bold;line-height:30px;}
 		.sub-m{display: none;}
 		.sub-m > li{width: 100%;height: 30px;padding: 20px 0;}
-		.sub-m > li >a{display: block;color:black;}
+		.sub-m>li>a{display: block;color:black;}
 		
-		/*scroll*/
+		/*scroll-icon*/
 		.scroll{position: absolute;width: 50px;height: 50px;line-height: 50px;left: 48%;bottom:50px;border-radius:50px;background-color:rgba(0,0,0,0.8);cursor:pointer;text-align: center;opacity:1;transition:0.3s;
 			animation-name:viewTop;animation-duration:1s;
 			animation-iteration-count:infinite;
@@ -96,6 +96,7 @@
 		}
 		.sView1{_background-color: #f00;}
 		.sView2{_background-color: #0f0;}
+
 		.fp-controlArrow.fp-prev {
     top: 84%;left: 45%;transform:translate(-50%,-50%);
     width: 0;
@@ -107,7 +108,7 @@
     border-width: 18.5px 0 18.5px 20px;
     border-color: transparent transparent transparent #000;
 }
-
+/*toggleMenu*/
 #menu > .toggleMenu{right:0;width:50px;height:50px;position:fixed;cursor:pointer;z-index:9999999;display:block;transition:0.2s;}
 
 .toggleMenu:hover .bar2{width: 0px;}
@@ -125,7 +126,7 @@
 .toggleMenu.change .bar2{opacity:0;}
 .toggleMenu.change .bar3{transform:rotate(45deg);top:22px;background-color:#fff;position: absolute;}
 
-
+/*menu background gradient*/
 #header_top{
 	width:100%;height: 50px;
 	position:relative;
@@ -148,6 +149,56 @@
 	}
 }
 
+/*subPage1-product*/
+#navTop1{position: fixed;height: 50px;width: 100%;background-color:#000;z-index: 9;padding-left:20px;}
+#navTop1 li{float: left;}
+#navTop1 li a{display: block;line-height: 50px;text-align: center;padding: 0 10px;color:white;font-weight:bold;}
+#navTop1 li.active{background-color:#eb630a;}
+#navTop1 li.active a{color:white;font-weight:bold;}
+#navTop1 .sub-m{display: none;}
+#navTop1 .sub-m > li{width: 100%;height: 30px;padding: 20px 0;}
+#navTop1 .sub-m>li>a{display: block;color:black;font-weight:normal;}
+.logo a{color:white;display: block;font-size:2em;margin:0 30px;font-weight:bold;}
+/*subPage2-history*/
 
-	</style>}
+.scene.two>div{background-color:rgba(255,255,255,0.5);}
+.scene.two>div>h1{margin: 20px;}
+.scene.two>div>h1:after{content:"";
+			width:95%;height: 1px;background-color: #f00;
+			display: block;margin: 20px;}
+.scene.three>div{background-color:rgba(255,255,255,0.5);}
+.scene.three>div>h1{margin: 20px;}
+.scene.three>div>h1:after{content:"";
+			width:95%;height: 1px;background-color: #f00;
+			display: block;margin: 20px;}
+.scene.three img{
+			width: 600px;position: absolute;left: 50%;top: 80%;transform:translate(-50%,-20%);
+			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;
+		}
+.scene{
+			width: 100%;height: 100%;background-attachment:fixed;
+			background-position:center;
+			background-size: cover;
+			position: relative;
+		}
+		.scene.one{
+			background-image: url(../images/han3.jpg);
+		}.scene.two{
+			background-image: url(../images/han3.jpg);
+		}.scene.three{
+			background-image: url(../images/dan.jpg);
+		}
+		.scene.four{
+			background-image: url(../images/haribo.jpg);
+		}
+		.scene div{
+			color:black;width: 600px;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);
+			text-align: center;font-size: 1.5em;max-width:80%;text-shadow:1px 1px 5px #333;
+		}
+		.scene.one div h1:after{
+			content:"";
+			width:100%;height: 1px;_background-color: #fff;background:linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+			display: block;margin: 10px;
+		}
+	</style>
 
