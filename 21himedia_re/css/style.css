@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*reset*/
+*{margin: 0;padding: 0;box-sizing:border-box;}
+li{list-style:none;}
+a:link,a:visited{color:black;}
+a{text-decoration:none;}
+img{display:block;}
+.clearfix:after{content:"";clear:both;display:block;}
+/*reset end*/
+
+#main_header{position: relative;}
+#main_header>h1{text-align:center;padding:20px 0;}
+#main_header>.main_util{border-bottom:1px solid #cdcdcd; }
+#main_header>.main_util>.util_menu{width: 980px;height: 30px;margin: 0 auto;position: relative;}
+#main_header>.main_util>.util_menu>ul.util_wrap{height: 20px;position: absolute;right: 0;bottom: 5px;}
+#main_header>.main_util>.util_menu>ul.util_wrap>li{float:left;text-align:center;border-right:1px solid #cdcdcd; }
+#main_header>.main_util>.util_menu>ul.util_wrap>li:last-child{border-right: none;}
+#main_header>.main_util>.util_menu>ul.util_wrap>li>a{display:block;padding:0 10px;color:gray;font-size:0.8em;}
+.button{position: absolute;right: 0;top:50px;}
+#main_header>.main_menu{height: 45px;background-color:#1D5DA4;}
+#main_header>.main_menu>ul.menu_wrap{width: 980px;height: 45px;background-color:#1D5DA4;margin: 0 auto;}
+#main_header>.main_menu>ul.menu_wrap>li{float:left;width: 163.33px;line-height:45px;text-align:center;border-right:1px solid #b3b3b3;}
+#main_header>.main_menu>ul.menu_wrap>li:first-child{border-left:1px solid#b3b3b3;}
+#main_header>.main_menu>ul.menu_wrap>li>a{display:block;font-weight:bold;color:white; }
+#main_header>.main_menu>ul.menu_wrap>li>a:hover{background-color: skyblue;color:#1d5da4;}
+/*visual*/
+div#visual_wrap{height: 400px;background:#203969 url(../images/images/visual_bg.jpg) no-repeat center;}
+	.visual{width: 980px;margin: 0 auto;height: 400px;position: relative;}
+	.visual>img.img01{position: absolute;right: 0;bottom: 0;}
+	.visual>img.img02{position: absolute;left: 0;top: 70px;}
+/*visual icon	*/
+div#visual_icon{background-color: #eee;}
+div#visual_icon>.icon_wrap{width: 980px;margin: 0 auto;}
+div.icon_wrap li{float: left;width: 20%;height: 196px;}
+.icon_wrap>ul>a>li:nth-child(1){background-color: #7c99b9;}
+.icon_wrap>ul>li:nth-child(2){background-color: #4f74a1;}
+.icon_wrap>ul>li:nth-child(3){background-color: #4b8ce0;}
+.icon_wrap>ul>li:nth-child(4){background-color: #3db5f2;}
+.icon_wrap>ul>li:nth-child(5){background-color: #95c8ff;}
+div.icon_wrap li:hover{background-color: skyblue;cursor:pointer;}
+
+div#visual_icon .card{padding: 15px;}
+div#visual_icon .card>img{margin: 0 auto;}
+div#visual_icon .card>.card-body{text-align: center;color:white;padding-top:13px ;}
+/*content*/
+#content{}
+#content>.card-wrap{width: 980px;margin: 0 auto;padding:50px 0 20px 0; }
+#content>ul{}
+#content>.card-wrap>ul>li{float: left;width:310px;border:1px solid #eee;margin-right:25px;}
+#content>.card-wrap>ul>li:last-child{margin-right:0; }
+#content>.card-wrap>ul>li>.card{}
+#content>.card-wrap>ul>li>.card>img{}
+#content>.card-wrap>ul>li>.card>.card-body{padding:15px}
+/*section*/
+#content2{position: relative;}
+#content2>.card2-wrap{width: 980px;margin: 0 auto;}
+#content2>.card2-wrap>ul{}
+#content2>.card2-wrap>ul>li{float: left;width: 310px;border:1px solid #eee;margin-right:25px;overflow:hidden;margin-bottom:50px ;padding: 0 0 20px 0;}
+#content2>.card2-wrap>ul>li:last-child{margin-right:0; }
+#content2>.card2-wrap>ul>li>.card{position: relative;width: 310px;height: 165px;}
+#content2>.card2-wrap>ul>li>.card>img{position: absolute;right:-20px;top:20px }
+#content2>.card2-wrap>ul>li>.card>.card-body{width: 150px;padding:20px 10px; position: absolute;}
+#content2>.card2-wrap>ul>li>.card>.card-text{}
+#content2>.card2-wrap>ul>li>.card>.card-body>a{color:blue;position: absolute;bottom: -10px; }
+/*footer*/
+#footer{height: 200px;background-color:#5e5e5e;}
+#footer>.footer1{height: 50px;background-color:#4d4d4d;position: relative;}
+#footer>.footer1>.footer01{margin: 0 auto;width: 980px;}
+#footer>.footer1>.footer01>ul{width: 490px;}
+#footer>.footer1>.footer01>ul>li{float: left;line-height:50px; padding:0 40px 0 0;color: white;
+}
+#footer>.footer1>.top{width: 60px;height: 50px;background-color: #404040; position: absolute;top:0;right: 0;}
+#footer>.footer2{width: 980px;margin: 0 auto;}
+#footer>.footer2>.logobt{width: 150px;height: 100px;float: left;line-height:120px;color:white;}
+address{font-style:normal;color:#a5a5a5;padding: 15px 0;line-height:25px;}
+address>p{}
+#footer>.logobt{}
+
