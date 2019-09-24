@@ -47,6 +47,11 @@ $(document).ready(function(){
 				e.preventDefault();
 				$(".popwrap").hide();
 			});
+
+			$(".iframe")
+			.colorbox({iframe:true,innerWidth:900,innerHeight:500});
+		
+
 // // elements
 // const text = document.getElementById('text');
 // const input = document.getElementById('input');
