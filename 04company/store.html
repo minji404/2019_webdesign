@@ -13,13 +13,18 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sub_style.css">
 	<script>
 		$(document).ready(function(){
+			
 			$(".nav_wrap ul li").click(function(){
 				var liNum = $(this).index();
 				$(".nav_wrap > ul > li").removeClass();
 				$(this).addClass("active");
+
+				$(".mw >nav").hide();
+				$(".mw > nav:eq("+liNum+")").show();
+				
 			});
 
 			// $("#scon > div").hide();
@@ -49,54 +54,48 @@
 					<li>ENG</li>
 				</ul>
 			</div>
-			<nav id="main_menu">
+			<div class="mw">
+			<nav id="main_menu" >
 				<ul class="clearfix">
 					<li ><a href="brand.html">나뚜루</a>
 					</li>
 					<li><a href="franchising.html">가맹점 모집</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+						
 					</li>
 					<li><a href="menu.html">메뉴소개</a>
-					<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+					
 					</li>
 					<li class="menu_active"><a href="store.html">매장찾기</a>
-				<!-- 	<ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+				
 					</li>
 					<li><a href="sns.html">SNS</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+						
 					</li>
-					<li><a href="hire.html">인재채용</a>
-				<!-- 	<ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
+					
 					
 				</ul>
 			</nav>
-
+			<nav id="emain_menu">
+				<ul class="clearfix">
+					<li ><a href="brand.html">Natuur</a>
+					</li>
+					<li><a href="franchising.html">Franchising</a>
+						
+					</li>
+					<li><a href="menu.html">Menu</a>
+					
+					</li>
+					<li class="menu_active"><a href="store.html">Store</a>
+				
+					</li>
+					<li><a href="sns.html">SNS</a>
+						
+					</li>
+					
+					
+				</ul>
+			</nav>
+				</div>
 		</div>
 
 		<div class="subheader4"></div>

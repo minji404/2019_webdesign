@@ -46,10 +46,10 @@
 				console.log(myClass);
 				if(myClass == "toggleMenu"){
 					$(this).addClass("change");
-					$("#main_menu").stop().animate({left:0},300);
+					$("#main_menu").stop().animate({right:0},300);
 				}else{
 					$(this).removeClass("change");
-					$("#main_menu").stop().animate({left:"-100%"},300)
+					$("#main_menu").stop().animate({right:"-100%"},300)
 				}
 			});
 		});
@@ -60,7 +60,7 @@
 				$("#header_top").find(".toggleMenu").removeClass("change");
 			}else{
 				$("#header_top").find(".toggleMenu").removeClass("change");
-				$("#main_menu").css({left:"-100%"});
+				$("#main_menu").css({right:"-100%"});
 			}
 			
 		});
@@ -77,6 +77,10 @@
 				var liNum = $(this).index();
 				$(".nav_wrap > ul > li").removeClass();
 				$(this).addClass("active");
+
+				$(".mw >nav").hide();
+				$(".mw > nav:eq("+liNum+")").show();
+				
 			});
 		});
 		
@@ -86,28 +90,63 @@
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
 			<h1><a href="index.html"><img src="images/logo.png" alt="나뚜루"></a></h1>
-			<h1><a href="index.html"><img src="images/logob.png" alt="나뚜루"></a></h1>
+			
 			<div class="nav_wrap clearfix">
 				<ul>
 					<li class="active">KOR</li>
 					<li>ENG</li>
 				</ul>
 			</div>
-			<nav id="main_menu">
+			<div class="mw">
+			<nav id="main_menu" >
 				<ul class="clearfix">
-					<li><a href="brand.html">나뚜루</a></li>
-					<li><a href="franchising.html">가맹점 모집</a></li>
-					<li><a href="menu.html">메뉴소개</a></li>
-					<li><a href="store.html">매장찾기</a></li>
-					<li><a href="sns.html">SNS</a></li>
-					<li><a href="hire.html">인재채용</a></li>
+					<li ><a href="brand.html">나뚜루</a>
+					</li>
+					<li><a href="franchising.html">가맹점 모집</a>
+						
+					</li>
+					<li><a href="menu.html">메뉴소개</a>
+					
+					</li>
+					<li><a href="store.html">매장찾기</a>
+				
+					</li>
+					<li><a href="sns.html">SNS</a>
+						
+					</li>
+					
+					
 				</ul>
 			</nav>
-			<div class="toggleMenu">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
+			<nav id="emain_menu">
+				<ul class="clearfix">
+					<li ><a href="brand.html">Natuur</a>
+					</li>
+					<li><a href="franchising.html">Franchising</a>
+						
+					</li>
+					<li><a href="menu.html">Menu</a>
+					
+					</li>
+					<li><a href="store.html">Store</a>
+				
+					</li>
+					<li><a href="sns.html">SNS</a>
+						
+					</li>
+					
+					
+				</ul>
+			</nav>
+				</div>
+		</div>
+		<div class="fmenu">
+				<h1><a href="index.html"><img src="images/logob.png" alt="나뚜루"></a></h1>
+				<div class="toggleMenu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
 		</div>
 		<div class="slider_wrap">
 			<div class="s_btn">
@@ -164,25 +203,37 @@
 				
 				<!-- content3st -->
 				<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
-				<h2>뉴스</h2>
+				<!-- <h2>Natuur</h2> -->
 				<ul class="slider2">
 					<li class="clearfix">
-						<div class="left">롯데제과, 도심 속 숲조성 캠페인<br>'나뚜루 포레스트' 실시<br>자연주의 아이스크림 브랜드
-							나뚜루가<br>자연보호 활동에 나섰다...</div>
+						<div class="left">
+							<h2># 신제품 </h2><br><br>
+							나뚜루에서만 만날 수 있는<br>"바닐라콘"<br><br>
+바닐라콘의 특별한 맛의 비밀<br><br>
+
+
+						</div>
 						<div class="right"><img src="images/img01.png" alt="01"></div>
 					</li>
 
 					<li class="clearfix">
-						<div class="left">롯데제과의 2분기 연결 매출액과 <br>영업이익은 각각 5337억원, <br> 215억원으로 추정한다.  <br>빙과 역시 ‘나뚜루’ 인수 효과가 <br> 반영되면서 견조한 매출 성장세가  <br>지속될 것으로...</div>
+						<div class="left">
+					<h2># 나뚜루 X 장기용</h2><br><br>
+							장기용으로<br> 더욱 달콤해진<br><br> 나뚜루를 만나보세요</div>
 						<div class="right"><img src="images/img02.png" alt="01"></div>
 					</li>
 					<li class="clearfix">
-						<div class="left">나뚜루 녹차 아이스크림은<br> 웰빙을 추구하는 여성들에게 <br>인기가 높아 스테디셀러로 <br>자리를 굳혔다...</div>
+						<div class="left">
+						<h2># Natuur</h2><br><br>
+							진짜 맛있는 아이스크림은<br>
+한입 베어 문 순간에 <br><br>바로 알 수 있다.</div>
 						<div class="right"><img src="images/img03.png" alt="01"></div>
 					</li>
 
 					<li class="clearfix">
-						<div class="left">‘카니칸쵸 케이크’는 <br>국내 대표 초코과자 ‘칸쵸’의 <br>캐릭터를 활용한 제품으로,<br> 요즘 식품업계에 불고 있는 <br>카테고리 간 ‘크로스오버’ <br>트렌드를 반영했다...</div>
+						<div class="left">
+							<h2># Natuur</h2><br><br>
+							딸기와 초코,<br> 녹차와 초코<br><br> 그냥 두개 다 먹으면 안되나요</div>
 						<div class="right"><img src="images/img04.png" alt="01"></div>
 					</li>
 				</ul>
@@ -295,8 +346,8 @@
 				<li>아이스크림 케이크<img src="images/cake07.png" alt=""></li>
 			</ul>
 		</div>
-		<div class="mcon2"><h2>선물하기</h2>소중한 사람에게 나뚜루로 마음을 전해보세요!</div>
-		<div class="mcon3"><h2>홈서비스</h2>이제 집에서도 나뚜루를 즐겨보세요!</div>
+		<div class="mcon2"><a href="http://www.gifticon.com/shopping/shopping_brandview.do?prodDispId=FS0029" target="_blank"><h2>선물하기</h2>소중한 사람에게 나뚜루로 마음을 전해보세요!</a></div>
+		<div class="mcon3"><a href="http://www.baemin.com/" target="_blank"><h2>홈서비스</h2>이제 집에서도 나뚜루를 즐겨보세요!</a></div>
 	</div>	
 	
 
@@ -372,12 +423,25 @@
 
 						
 						<div class="img_s"><a href="https://www.instagram.com/p/ByRqQSKJCl6/" onclick="window.open('https://www.instagram.com/p/ByRqQSKJCl6/','instagram','resizable=no width=600 height=800');return false"><img src="images/img1_3.png" alt="나뚜루디저트"></a></div>
-						<div class="txt_s"><a href="https://www.instagram.com/p/B2K81ePJT2B/" onclick="window.open('https://www.instagram.com/p/B2K81ePJT2B/','instagram','resizable=no width=600 height=800');return false">푹 익은 달콤한 복숭아같은<br> 가을이 다가오고 있어요❤️<br><br><br>어딘가 아쉬운 마음은<br>달콤한 나뚜루 아이스크림으로 <br>꽉 채워주세요😊<br><br><br>#감성 #피치요거트 #natuur
+						<div class="txt_s"><a href="https://www.instagram.com/p/B2K81ePJT2B/" onclick="window.open('https://www.instagram.com/p/B2K81ePJT2B/','instagram','resizable=no width=600 height=800');return false">푹 익은 달콤한 복숭아같은<br> 가을이 다가오고 있어요<br><br><br>어딘가 아쉬운 마음은<br>달콤한 나뚜루 아이스크림으로 <br>꽉 채워주세요❤️<br><br><br>#감성 #피치요거트 #natuur
 						<img src="images/h0.png" alt="좋아요" class="wow fadeOutUp"data-wow-delay="1.0s"data-wow-iteration="5"><span>1513</span></a></div>
 
 						
 					</li>
 				</ul>		
+		</div>
+		<div class="msn clearfix">
+			<div class="msncon">
+				<!-- <img src="images/instare.png" alt="나뚜루 소식"> -->
+				<!-- <h2>나뚜루 SNS</h2> -->
+				</div>
+				<div class="mswr">
+					<a href="https://www.instagram.com/p/ByRqQSKJCl6/" onclick="window.open('https://www.instagram.com/p/B2ksKIKpWy6/','instagram','resizable=no width=600 height=800');return false"><img src="images/img1_1.png" alt="나뚜루 신제품"></a>
+					<a href="https://www.instagram.com/p/ByRqQSKJCl6/" onclick="window.open('https://www.instagram.com/p/B2K81ePJT2B/','instagram','resizable=no width=600 height=800');return false"><img src="images/img1_2.png" alt="피치요거트"></a>
+					<a href="https://www.instagram.com/p/ByRqQSKJCl6/" onclick="window.open('https://www.instagram.com/p/ByRqQSKJCl6/','instagram','resizable=no width=600 height=800');return false"><img src="images/img1_3.png" alt="녹차아이스크림"></a>
+					<a href="https://www.instagram.com/p/ByRqQSKJCl6/" onclick="window.open('https://www.instagram.com/p/ByTw5fdJQYh/','instagram','resizable=no width=600 height=800');return false"><img src="images/img1_4.png" alt="피치요거트"></a>
+				</div>	
+			
 		</div>
 
 		<div class="banner_wrap clearfix">	
@@ -391,7 +455,7 @@
 				<h2>홈 서비스</h2>
 				<p>이제 집에서도 나뚜루를<br>즐겨보세요!</p>
 				<li><a href="http://www.baemin.com/" target="_blank">바로 가기</a></li>
-				<img src="images/img2_2.png" alt="홈서비스">
+				<img src="images/img2_3.png" alt="홈서비스">
 			</div>
 		</div>	
 	</div>
@@ -434,13 +498,16 @@
 					</address>
 				</div>				
 			</div>
+
 			<div class="ffm">
 					
-					<select class="ffm" >
+					<select class="ffm" onchange="if(this.value){window.open(value,'_blank')}">
+						
 						<option value="FAMILY SITE">FAMILY SITE</option>
-						<option value="롯데그룹">롯데그룹</option>
-						<option value="롯데제과">롯데제과</option>
-						<option value="롯데푸드">롯데푸드</option>
+						<optgroup label="------------"></optgroup>
+						<option value="http://www.lotte.co.kr/main.do">롯데그룹</option>
+						<option value="http://www.lotteconf.co.kr/">롯데제과</option>
+						<option value="http://www.lottefoods.co.kr/">롯데푸드</option>
 					</select>
 				</div>
 		</div>

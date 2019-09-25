@@ -13,17 +13,21 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/sub_style.css">
 	<script>
 		$(document).ready(function(){
 			$(".nav_wrap ul li").click(function(){
 				var liNum = $(this).index();
 				$(".nav_wrap > ul > li").removeClass();
 				$(this).addClass("active");
+
+				$(".mw >nav").hide();
+				$(".mw > nav:eq("+liNum+")").show();
+				
 			});
 
 			$("#scon > div").hide();
-			$("#scon > div:eq(1)").show();
+			$("#scon > div:eq(0)").show();
 
 
 			$(".smenu ul li").click(function(){
@@ -49,53 +53,48 @@
 					<li>ENG</li>
 				</ul>
 			</div>
-			<nav id="main_menu">
+			<div class="mw">
+			<nav id="main_menu" >
 				<ul class="clearfix">
 					<li class="menu_active"><a href="brand.html">나뚜루</a>
 					</li>
 					<li><a href="franchising.html">가맹점 모집</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+						
 					</li>
 					<li><a href="menu.html">메뉴소개</a>
-					<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+					
 					</li>
 					<li><a href="store.html">매장찾기</a>
-				<!-- 	<ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+				
 					</li>
 					<li><a href="sns.html">SNS</a>
-						<!-- <ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
+						
 					</li>
-					<li><a href="hire.html">인재채용</a>
-				<!-- 	<ul class="submenu clearfix">
-							<li><a href="#">menu1</a></li>
-							<li><a href="#">menu2</a></li>
-							<li><a href="#">menu3</a></li>
-							<li><a href="#">menu4</a></li>
-						</ul> -->
-					</li>
+					
 					
 				</ul>
 			</nav>
+			<nav id="emain_menu">
+				<ul class="clearfix">
+					<li class="menu_active"><a href="brand.html">Natuur</a>
+					</li>
+					<li><a href="franchising.html">Franchising</a>
+						
+					</li>
+					<li><a href="menu.html">Menu</a>
+					
+					</li>
+					<li><a href="store.html">Store</a>
+				
+					</li>
+					<li><a href="sns.html">SNS</a>
+						
+					</li>
+					
+					
+				</ul>
+			</nav>
+				</div>
 
 		</div>
 
@@ -106,40 +105,26 @@
 			<h2>나뚜루</h2>
 			<p>나뚜루에서 이뤄낸 기술 변화가 맛을 바꿉니다.</p>
 		</div>
-		<div class="smenu">
+		<!-- <div class="smenu">
 			<ul class="clearfix">
 				
-				<li><a href="javascript:void(0)">CEO 인사말</a></li>
+				 <li><a href="javascript:void(0)">CEO 인사말</a></li> 
 				<li class="sclick"><a href="javascript:void(0)">나뚜루 소개</a></li>
 				<li><a href="javascript:void(0)">핵심가치</a></li>
 				<li><a href="javascript:void(0)">CI</a></li>
 			</ul>
-		</div>
+		</div> -->
 	</header>
 		<div id="scon">
 			<div class="ssub1">
 
+				
 				<div class="cont1">
 					<ul class="clearfix">
 						<li><img src="images/sub1.png" alt=""></li>
 						<li><img src="images/sub2.png" alt=""></li>
 						<li>나뚜루</li>
-						<li><img src="images/sub2.png" alt=""></li>
-						<li>CEO 인사말</li>
-					</ul>
-				</div>
-			<div class="ssub2b">
-				<img src="images/sub1_1.png" alt="">
-			</div>
-			</div>
-			<div class="ssub2">
-				<div class="cont1">
-					<ul class="clearfix">
-						<li><img src="images/sub1.png" alt=""></li>
-						<li><img src="images/sub2.png" alt=""></li>
-						<li>나뚜루</li>
-						<li><img src="images/sub2.png" alt=""></li>
-						<li>나뚜루 소개</li>
+						
 					</ul>
 				</div>
 				<div class="cont2">
@@ -197,7 +182,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="ssub3">
+			<div class="ssub2">
 
 				<div class="cont1">
 					<ul class="clearfix">
@@ -209,10 +194,10 @@
 					</ul>
 				</div>
 			<div class="ssub2b">
-				<img src="images/sub1_2.png" alt="">
+				<!-- <img src="images/sub1_2.png" alt=""> -->
 			</div>
 			</div>
-			<div class="ssub4">
+			<div class="ssub3">
 
 				<div class="cont1">
 					<ul class="clearfix">
