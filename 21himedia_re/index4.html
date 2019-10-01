@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>::NATUUR::</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+		
+		.topnav{background-color: #333;}
+		.topnav a{display:block;float: left;padding: 14px 16px;color:#f2f2f2;}
+		.topnav a:hover{background-color:#ddd;color:#000;}
+		.topnav .icon{float: right;}
+		.topnav .icon{display: none;}
+		
+		@media screen and (min-width:769px){
+			.menuWrap{position: fixed;width: 1260px;left: 50%;margin-left: -630px;top: 20px;}
+		}
+		@media screen and (min-width:601px) and (max-width:768px){
+			.menuWrap{position:relative;width:100%;left: 0;margin-left:0;top:0px;}
+		}
+		
+
+		@media screen and (max-width: 600px){
+			.menuWrap{position:relative;width:100%;left: 0;margin-left:0;top:0px;}
+			.topnav a:not(:first-child){display: none;}
+			.topnav a.icon{display: block;}
+			.topnav.responsive{position: relative;}
+			.topnav.responsive .icon{position: absolute;top: 0;right: 0;}
+			.topnav.responsive a{float: none;display: block;}
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			// $(".icon").click(function(){
+			// 	$("#myTopmenu").addClass("responsive");
+			// });
+			// $(".iconx").click(function(){
+			// 	$("#myTopmenu").removeClass("responsive");
+			// });
+			$(".icon").click(function(){
+				var topClass = $("#myTopmenu").attr("class");
+				console.log(topClass);
+				if(topClass == "topnav clearfix"){
+					$("#myTopmenu").addClass("responsive");
+				}else{
+					$("#myTopmenu").removeClass("responsive");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="menuWrap">
+		<div id="myTopmenu" class="topnav clearfix responsive">
+			<a href="#">HOME</a>
+			<a href="#"><i class="fas fa-newspaper"></i>News</a>
+			<a href="#"><i class="fas fa-home"></i>Contact</a>
+			<a href="#"><i class="fas fa-ban"></i>About</a>                                    
+			<a href="#" class="icon"><i class="fas fa-bars"></i></a>
+			<!-- <a href="#" class="iconx"><i class="fas fa-home"></i></a> -->
+		</div>
+	</div>
+	<div class="content">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a nobis voluptatum. Dolores nemo quasi neque, ad quia. Deserunt optio voluptas nam illo suscipit quis hic omnis unde odit corporis!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas asperiores, laudantium rerum sunt, esse perferendis. Modi nihil culpa error fuga enim ducimus, debitis dolore ipsam sint non, provident est, esse dolor. Nesciunt ut corporis deserunt, consequatur eveniet dolorem quo eligendi unde vitae laboriosam eum ab dolorum sequi magni, fuga minus neque fugiat voluptate quaerat praesentium distinctio. Ut molestias excepturi porro nisi error, aliquid placeat laudantium deserunt quos, nulla fugiat vel cumque? Aperiam totam, reiciendis ipsum veniam dolorem assumenda ea, repudiandae rem nihil, voluptates dolore? Molestias nemo ea nihil labore sint natus corporis, aspernatur voluptatem voluptatum ab quibusdam exercitationem quae laboriosam sit error dignissimos porro ipsa perspiciatis enim numquam illo dolore iusto beatae? Quas, nesciunt culpa libero. Natus culpa delectus cumque aliquid optio assumenda animi similique ducimus doloremque! Assumenda omnis qui accusamus ratione quod corporis cum, nobis asperiores adipisci porro in, fuga nulla odio quibusdam velit repellendus iure delectus officia quidem placeat est accusantium! Accusantium fugit consequuntur delectus iure, reiciendis, dolore cumque. Illo nesciunt id recusandae saepe iure dolorum iste officiis, quae quidem iusto eum laboriosam fugiat accusamus delectus libero dolor ipsum nihil voluptatum similique incidunt expedita aperiam, possimus consequuntur. Earum quisquam magnam similique itaque necessitatibus nobis aperiam nemo praesentium fugit.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ut, ipsa similique tempore, totam expedita fugit aspernatur tempora veniam fugiat, eligendi quam velit vitae doloremque dolorem laborum asperiores? Ipsum nesciunt, modi perspiciatis vero incidunt adipisci provident mollitia, amet odit quasi dolorem, molestias quas. Recusandae pariatur, omnis ipsam voluptatibus asperiores corporis expedita incidunt laudantium aliquam officia soluta odit debitis quae natus magni, ipsum quibusdam sequi culpa doloribus at dicta voluptates illo! Soluta odio, sapiente beatae dolor cumque, maiores nemo debitis perferendis non amet ratione earum, minima aperiam aliquid. Fuga eius porro ratione atque et quas enim modi totam delectus provident assumenda voluptatum adipisci repellendus quisquam, a, culpa at inventore numquam unde. Voluptas earum illo rem provident hic iste architecto velit voluptates cum quia delectus, beatae autem, assumenda officiis. A delectus rerum tenetur iste harum eaque quo eligendi consequuntur, dolorum, vitae dolore tempora ab facere expedita? Eos, velit ad, eius quidem debitis ratione voluptate quis sequi fugit. Voluptate veniam, quia temporibus quibusdam, sit doloremque. Et quo obcaecati animi minima accusantium perspiciatis voluptatum ab ipsam error nam. In rem delectus corporis omnis doloremque unde, et natus dolorum alias officia? Unde odio dolorem nulla, quasi optio animi nam necessitatibus. Atque veritatis harum fuga dolore nostrum aut quae ipsa. Nihil molestias est deleniti. Atque minima facere quos, id ex voluptatibus ab deleniti? Totam tempore nisi nemo impedit aperiam natus, hic incidunt tempora doloremque debitis atque fugiat commodi, quis deserunt consectetur quo iste eveniet? Ex illo, sequi deleniti qui libero, delectus cupiditate officiis consectetur quis id explicabo a unde. Minus ea pariatur doloremque aspernatur, id, unde dolores neque, ullam iure saepe animi. Mollitia labore odit dolorem consectetur a voluptatum, exercitationem dolor nostrum nihil reprehenderit deserunt delectus recusandae dolores itaque similique dicta quae inventore odio repellendus deleniti quas eligendi soluta! Illo provident suscipit at sed molestiae officiis nam accusantium consequatur fugit eius delectus aperiam inventore voluptatibus placeat architecto, blanditiis enim, esse excepturi iusto tempore minus. Non quidem voluptates odio dolores quia consequatur sequi eligendi ipsam maxime explicabo doloribus eveniet odit, itaque eius quo necessitatibus recusandae aspernatur aliquam, iure culpa voluptas voluptatum corporis omnis earum. Maiores repellat doloribus soluta sed hic consequatur earum, enim similique nobis neque ipsa et laborum non magnam vitae natus molestiae eligendi numquam modi maxime unde doloremque quae minus. Doloremque aperiam officiis nulla dolore nobis maiores minima, tempore dolor, minus aliquam natus culpa animi totam quidem perferendis consequatur qui consectetur tenetur nisi. Odit, quasi, rem! Delectus autem, temporibus inventore excepturi ullam recusandae esse officiis hic perspiciatis perferendis eveniet a impedit aperiam asperiores, unde aut velit saepe? Repellat fugiat minus fuga ut voluptates et, dolores rerum error ratione cum, dolorem explicabo quasi dolore. Culpa iure, nobis voluptas aspernatur cum cumque nulla, nostrum placeat, adipisci magnam tempore hic, qui. Non autem aperiam pariatur nam fugiat cum voluptatibus quisquam nemo dolorem dolorum praesentium ea natus eligendi sit, quibusdam mollitia qui labore culpa commodi accusantium. Sequi perspiciatis tenetur ex nulla voluptatem laboriosam adipisci officia corporis, porro nam consequuntur sapiente. Architecto temporibus placeat, quod cum commodi ea esse beatae.
+	</div>
+</body>
+</html>

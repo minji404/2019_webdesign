@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{min-width:1260px;font-family: 'Nanum Gothic', sans-serif;}
+body{min-width:1260px;font-family: 'Nanum Gothic',sans-serif;}
 #main_header{height: 1950px;background-color:white;position: relative;margin-bottom: 80px;}
 #header_top{width: 1260px;height: 50px;position: absolute;left: 50%;
 margin-left: -630px;top: 40px;z-index: 2;}
