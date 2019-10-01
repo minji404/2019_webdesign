@@ -295,6 +295,7 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+.icl{}
 .icb{display:none}
 a.ss:hover .icl{display: none;}
 a.ss:hover .icb{display: block;}
