@@ -70,6 +70,14 @@ background-color:darkgreen;transition:0.3s;margin: 0 auto;}
 .txt>h2{font-size:48px;font-weight:bold;margin: 20px;}
 .txt>p{font-size:18px}
 #scon{width: 1260px;height: 1990px;background-color:white;margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;}
+#sconk{width: 1260px;height:1100px;background-color:white;margin: 0 auto;font-family: 'Nanum Gothic', sans-serif;}
+#sconk h2{margin: 10px;}
+#sconk h3{margin: 5px;}
+.proimg{position: absolute;left:25%;margin: 45px;}
+.proimg1{position: absolute;left: 27%;top:1100px;}
+.proimg01{position: absolute;left: 27%;top:1320px;}
+.ssub1{width: 1200px;height: 1000px;margin: 0 auto;}
+
 .cont1{height: 30px;width: 1260px;}
 .cont1>ul{}
 .cont1>ul>li{float: left;display: block;margin-right: 15px;}
